@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560" role="img" aria-labelledby="title desc">
+<title id="title">OPTICS: ordenamiento, valles y distancia de núcleo</title>
+<desc id="desc">Perfil ilustrativo de doce posiciones ordenadas. La altura es alcanzabilidad en unidades de distancia ficticias; no son incidentes reales. Dos valles no equivalen automáticamente a dos grupos.</desc>
+<rect width="1100" height="560" fill="#f5f8fc"/>
+<g font-family="Arial, sans-serif" fill="#183449">
+<text x="40" y="42" font-size="27" font-weight="bold">OPTICS: leer estructura antes de extraer grupos</text>
+<text x="40" y="75" font-size="18">Elaboración propia · esquema sintético, no salida de ArcGIS ni mapa</text>
+<path d="M95 120V355H715" fill="none" stroke="#183449" stroke-width="2"/>
+<g font-size="16"><text x="64" y="359">0</text><text x="54" y="259">50</text><text x="44" y="159">100</text>
+<text x="105" y="110">Alcanzabilidad (unidades ilustrativas)</text><text x="195" y="397">Posición en el ordenamiento (no metros ni tiempo)</text></g>
+<g fill="#148082"><rect x="135" y="155" width="26" height="200"/><rect x="180" y="235" width="26" height="120"/><rect x="225" y="295" width="26" height="60"/><rect x="270" y="305" width="26" height="50"/><rect x="315" y="285" width="26" height="70"/><rect x="360" y="215" width="26" height="140"/><rect x="405" y="145" width="26" height="210"/><rect x="450" y="245" width="26" height="110"/><rect x="495" y="285" width="26" height="70"/><rect x="540" y="295" width="26" height="60"/><rect x="585" y="265" width="26" height="90"/><rect x="630" y="175" width="26" height="180"/></g>
+<g font-size="16" text-anchor="middle"><text x="148" y="377">1</text><text x="283" y="377">4</text><text x="418" y="377">7</text><text x="553" y="377">10</text><text x="643" y="377">12</text></g>
+<text x="210" y="275" font-size="18">Valle A</text><text x="497" y="245" font-size="18">Valle B</text>
+<rect x="745" y="120" width="320" height="260" rx="12" fill="#e2ecf5"/>
+<g font-size="18"><text x="765" y="151" font-weight="bold">Dos magnitudes diferentes</text><text x="765" y="189">Núcleo: radio para reunir m.</text><text x="765" y="228">Alcanzabilidad desde o:</text><text x="765" y="257">máximo de núcleo(o) y d(o,p).</text><text x="765" y="301">Sensibilidad: criterio de</text><text x="765" y="328">extracción; no valor p.</text><text x="765" y="355">50 / 90: comparar, no prometer.</text></g>
+<text x="40" y="448" font-size="19">Conclusión: una cresta expresa una conexión más difícil, no una causa del evento.</text>
+<text x="40" y="480" font-size="18">Límite: el perfil omite valores no definidos y no prueba cantidad real de grupos.</text>
+<text x="40" y="520" font-size="16">Ideas: Esri Pro 3.6, How Density-based Clustering works; scikit-learn 1.6, OPTICS.</text>
+</g></svg>

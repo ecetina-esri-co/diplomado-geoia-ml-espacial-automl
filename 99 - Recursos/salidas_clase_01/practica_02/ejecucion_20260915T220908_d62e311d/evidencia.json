@@ -1,0 +1,392 @@
+{
+  "run_id": "ejecucion_20260915T220908_d62e311d",
+  "estado": "ejecutado",
+  "autonomo": true,
+  "runtime": {
+    "arcgis_pro": "3.6.2",
+    "python": "3.13.7",
+    "licencia": "ArcInfo"
+  },
+  "segundos": 333.2970830999984,
+  "tiempos_herramientas": {
+    "CopyFeatures_entrada": 9.4378757999948,
+    "CheckGeometry_puntos": 3.9990455000079237,
+    "CheckGeometry_jurisdicciones_preparadas": 1.2603791000001365,
+    "FieldStatisticsToTable": 5.444556299989927,
+    "arcgis_estaciones": 2.757438800006639,
+    "arcgis_jurisdicciones": 0.3470914000063203,
+    "arcgis_anios": 0.37820920000376645,
+    "arcgis_mapa_entrada": 4.1682385000021895,
+    "DBSCAN": 24.354128100007074,
+    "Seleccion_sin_ruido": 0.4950736000027973,
+    "MeanCenter": 10.338556699993205,
+    "Identity": 1.583090700005414,
+    "Statistics_COUNT": 1.775981500002672,
+    "AddJoin": 0.4587169000005815,
+    "CopyFeatures_centros": 0.8825136000086786,
+    "arcgis_mapa_dbscan": 3.351400100000319,
+    "arcgis_poblacion_dbscan": 0.12516579999646638,
+    "HDBSCAN": 122.76150529998995,
+    "arcgis_mapa_hdbscan": 3.757405500000459,
+    "arcgis_poblacion_hdbscan": 0.11696980000124313,
+    "arcgis_hist_prob": 0.6222878999979002,
+    "arcgis_hist_outlier": 0.6069095999991987,
+    "OPTICS": 69.16488620000018,
+    "arcgis_mapa_optics": 4.103954299993347,
+    "arcgis_poblacion_optics": 0.2174109000043245,
+    "arcgis_alcanzabilidad": 21.98581440000271
+  },
+  "png": [
+    "arcgis_estaciones.png",
+    "arcgis_jurisdicciones.png",
+    "arcgis_anios.png",
+    "arcgis_mapa_entrada.png",
+    "arcgis_mapa_dbscan.png",
+    "arcgis_poblacion_dbscan.png",
+    "arcgis_mapa_hdbscan.png",
+    "arcgis_poblacion_hdbscan.png",
+    "arcgis_hist_prob.png",
+    "arcgis_hist_outlier.png",
+    "arcgis_mapa_optics.png",
+    "arcgis_poblacion_optics.png",
+    "arcgis_alcanzabilidad.png"
+  ],
+  "parametros": {
+    "DBSCAN": {
+      "minimo": 100,
+      "distancia_m": 350
+    },
+    "HDBSCAN": {
+      "minimo": 100
+    },
+    "OPTICS": {
+      "minimo": 100,
+      "distancia_m": 350,
+      "sensibilidad": "automatica_omitida"
+    }
+  },
+  "perfil_antes": {
+    "filas": 90443,
+    "nulos": {
+      "IncidentesBomberos_FECHA": 0,
+      "IncidentesBomberos_NUMERO_INC": 60711,
+      "IncidentesBomberos_ESTACION": 0,
+      "Incidentes_Bomberos_AddSpatialJoin_ESTACION": 0
+    },
+    "id_cero": 0,
+    "ids_no_nulos": {
+      "distintas": 29165,
+      "claves_repetidas": 494,
+      "filas_excedentes": 567
+    },
+    "xy": {
+      "distintas": 82770,
+      "claves_repetidas": 5670,
+      "filas_excedentes": 7673
+    },
+    "xy_no_finitas": 0,
+    "fecha_min": "2022-01-01T00:00:00",
+    "fecha_max": "2024-12-31T00:00:00",
+    "estaciones": {
+      "B-1  CHAPINERO": 7260,
+      "B-10  MARICHUELA": 4382,
+      "B-11 LA CANDELARIA": 6219,
+      "B-12  SUBA": 5839,
+      "B-13  CAOBOS SALAZAR": 7706,
+      "B-14  BICENTENARIOLA INDEPENDENCIA": 5250,
+      "B-15  GARCÉS NAVAS": 5369,
+      "B-16 VENECIA": 3218,
+      "B-17  CENTRO HISTÓRICO": 3087,
+      "B-2  CENTRAL": 4677,
+      "B-3  RESTREPO": 4802,
+      "B-4  PUENTE ARANDA": 3669,
+      "B-5 KENNEDY": 8705,
+      "B-6  FONTIBÓN": 4441,
+      "B-7  FERIAS": 6205,
+      "B-8 BOSA": 5169,
+      "B-9  BELLAVISTA": 4445
+    },
+    "jurisdiccion_heredada": {
+      "B-1": 7260,
+      "B-10": 4382,
+      "B-11": 6219,
+      "B-12": 5839,
+      "B-13": 7706,
+      "B-14": 5250,
+      "B-15": 5369,
+      "B-16": 3218,
+      "B-17": 3087,
+      "B-2": 4677,
+      "B-3": 4802,
+      "B-4": 3669,
+      "B-5": 8705,
+      "B-6": 4441,
+      "B-7": 6205,
+      "B-8": 5169,
+      "B-9": 4445
+    },
+    "anios": {
+      "2022": 29890,
+      "2023": 30821,
+      "2024": 29732
+    },
+    "wkid": 9377,
+    "crs": "MAGNA-SIRGAS_2018_Origen-Nacional",
+    "unidades": "Meter"
+  },
+  "perfil_despues": {
+    "filas": 90443,
+    "nulos": {
+      "IncidentesBomberos_FECHA": 0,
+      "IncidentesBomberos_NUMERO_INC": 60711,
+      "IncidentesBomberos_ESTACION": 0,
+      "Incidentes_Bomberos_AddSpatialJoin_ESTACION": 0
+    },
+    "id_cero": 0,
+    "ids_no_nulos": {
+      "distintas": 29165,
+      "claves_repetidas": 494,
+      "filas_excedentes": 567
+    },
+    "xy": {
+      "distintas": 82770,
+      "claves_repetidas": 5670,
+      "filas_excedentes": 7673
+    },
+    "xy_no_finitas": 0,
+    "fecha_min": "2022-01-01T00:00:00",
+    "fecha_max": "2024-12-31T00:00:00",
+    "estaciones": {
+      "B-1  CHAPINERO": 7260,
+      "B-10  MARICHUELA": 4382,
+      "B-11 LA CANDELARIA": 6219,
+      "B-12  SUBA": 5839,
+      "B-13  CAOBOS SALAZAR": 7706,
+      "B-14  BICENTENARIOLA INDEPENDENCIA": 5250,
+      "B-15  GARCÉS NAVAS": 5369,
+      "B-16 VENECIA": 3218,
+      "B-17  CENTRO HISTÓRICO": 3087,
+      "B-2  CENTRAL": 4677,
+      "B-3  RESTREPO": 4802,
+      "B-4  PUENTE ARANDA": 3669,
+      "B-5 KENNEDY": 8705,
+      "B-6  FONTIBÓN": 4441,
+      "B-7  FERIAS": 6205,
+      "B-8 BOSA": 5169,
+      "B-9  BELLAVISTA": 4445
+    },
+    "jurisdiccion_heredada": {
+      "B-1": 7260,
+      "B-10": 4382,
+      "B-11": 6219,
+      "B-12": 5839,
+      "B-13": 7706,
+      "B-14": 5250,
+      "B-15": 5369,
+      "B-16": 3218,
+      "B-17": 3087,
+      "B-2": 4677,
+      "B-3": 4802,
+      "B-4": 3669,
+      "B-5": 8705,
+      "B-6": 4441,
+      "B-7": 6205,
+      "B-8": 5169,
+      "B-9": 4445
+    },
+    "anios": {
+      "2022": 29890,
+      "2023": 30821,
+      "2024": 29732
+    },
+    "wkid": 9377,
+    "crs": "MAGNA-SIRGAS_2018_Origen-Nacional",
+    "unidades": "Meter"
+  },
+  "geometria": {
+    "puntos": 0,
+    "jurisdicciones_preparadas": 0
+  },
+  "jurisdicciones": 17,
+  "centros": {
+    "centros": 20,
+    "filas_identity": 20,
+    "sin_jurisdiccion": [],
+    "multiples": {},
+    "fronteras": [],
+    "tolerancia_xy_m": 0.001,
+    "filas_finales": 20,
+    "grupos_menores_100": {
+      "10": 81,
+      "15": 99,
+      "16": 66,
+      "18": 96,
+      "20": 76
+    }
+  },
+  "conteos_centros": {
+    "1": 67478,
+    "2": 579,
+    "3": 2335,
+    "4": 459,
+    "5": 1175,
+    "6": 338,
+    "7": 956,
+    "8": 2175,
+    "9": 232,
+    "10": 81,
+    "11": 230,
+    "12": 132,
+    "13": 161,
+    "14": 182,
+    "15": 99,
+    "16": 66,
+    "17": 107,
+    "18": 96,
+    "19": 102,
+    "20": 76
+  },
+  "DBSCAN": {
+    "filas": 90443,
+    "clusters": 20,
+    "ruido": 13384,
+    "porcentaje_ruido": 14.798270734053492,
+    "mayor_cluster": 67478,
+    "conteos": {
+      "-1": 13384,
+      "1": 67478,
+      "2": 579,
+      "3": 2335,
+      "4": 459,
+      "5": 1175,
+      "6": 338,
+      "7": 956,
+      "8": 2175,
+      "9": 232,
+      "10": 81,
+      "11": 230,
+      "12": 132,
+      "13": 161,
+      "14": 182,
+      "15": 99,
+      "16": 66,
+      "17": 107,
+      "18": 96,
+      "19": 102,
+      "20": 76
+    }
+  },
+  "HDBSCAN": {
+    "filas": 90443,
+    "clusters": 3,
+    "ruido": 1187,
+    "porcentaje_ruido": 1.3124288225733334,
+    "mayor_cluster": 88919,
+    "conteos": {
+      "-1": 1187,
+      "1": 146,
+      "2": 88919,
+      "3": 191
+    }
+  },
+  "OPTICS": {
+    "filas": 90443,
+    "clusters": 29,
+    "ruido": 17561,
+    "porcentaje_ruido": 19.416649160244575,
+    "mayor_cluster": 52889,
+    "conteos": {
+      "-1": 17561,
+      "1": 3935,
+      "2": 134,
+      "3": 992,
+      "4": 357,
+      "5": 280,
+      "6": 379,
+      "7": 699,
+      "8": 1279,
+      "9": 638,
+      "10": 354,
+      "11": 202,
+      "12": 340,
+      "13": 120,
+      "14": 226,
+      "15": 438,
+      "16": 52889,
+      "17": 708,
+      "18": 579,
+      "19": 2335,
+      "20": 454,
+      "21": 1172,
+      "22": 337,
+      "23": 956,
+      "24": 2175,
+      "25": 228,
+      "26": 225,
+      "27": 124,
+      "28": 155,
+      "29": 172
+    }
+  },
+  "histogramas_asignados": {
+    "asignados": 89256,
+    "prob_validos": 89256,
+    "prob_mediana": 1.0,
+    "prob_mayor_igual_09": 86731,
+    "outlier_mediana": 0.02555081936288076
+  },
+  "alcanzabilidad": {
+    "campo_orden": "REACHORDER",
+    "campo_distancia": "REACHDIST",
+    "filas": 90443,
+    "no_representables": 0
+  },
+  "comparacion": {
+    "DBSCAN_HDBSCAN": {
+      "filas_enlazadas": 90443,
+      "jaccard_copertenencia": 0.5775689341249255
+    },
+    "DBSCAN_OPTICS": {
+      "filas_enlazadas": 90443,
+      "jaccard_copertenencia": 0.6199117861058122
+    },
+    "HDBSCAN_OPTICS": {
+      "filas_enlazadas": 90443,
+      "jaccard_copertenencia": 0.3580417895526128
+    }
+  },
+  "hashes_antes": {
+    "gdb": {
+      "sha256": "755eb22f11f325286e16475b59649bc2818393bd9521cfaa2a339ff26594c9a4",
+      "archivos": 65
+    },
+    "preparada": {
+      "sha256": "91e31385316eae6567bdd9385263f60328cf4c05780890f97f18d922878547de",
+      "archivos": 76
+    },
+    "plantilla": {
+      "sha256": "04f425cca63ecd6a757ba72320bfbc09bd2e209b75ef78d68abed8dcf1bb6012",
+      "archivos": 1
+    }
+  },
+  "hashes_despues": {
+    "gdb": {
+      "sha256": "755eb22f11f325286e16475b59649bc2818393bd9521cfaa2a339ff26594c9a4",
+      "archivos": 65
+    },
+    "preparada": {
+      "sha256": "91e31385316eae6567bdd9385263f60328cf4c05780890f97f18d922878547de",
+      "archivos": 76
+    },
+    "plantilla": {
+      "sha256": "04f425cca63ecd6a757ba72320bfbc09bd2e209b75ef78d68abed8dcf1bb6012",
+      "archivos": 1
+    }
+  },
+  "aprx": [
+    "arcgis_mapa_dbscan.aprx",
+    "arcgis_mapa_entrada.aprx",
+    "arcgis_mapa_hdbscan.aprx",
+    "arcgis_mapa_optics.aprx"
+  ]
+}

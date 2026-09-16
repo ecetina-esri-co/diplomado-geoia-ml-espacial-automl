@@ -1,0 +1,340 @@
+{
+  "practica": "01",
+  "estado": "ejecutado",
+  "segundos": 40.3553918999969,
+  "sintetica_exclusiva": true,
+  "n_samples": 200,
+  "noise": 0.9999,
+  "random_state": 10,
+  "base": {
+    "DBSCAN": {
+      "filas": 200,
+      "clusters": 5,
+      "ruido": 58,
+      "porcentaje_ruido": 29.0,
+      "mayor_cluster": 66
+    },
+    "HDBSCAN": {
+      "filas": 200,
+      "clusters": 8,
+      "ruido": 108,
+      "porcentaje_ruido": 54.0,
+      "mayor_cluster": 18
+    }
+  },
+  "tipos_dbscan": {
+    "nucleo": 108,
+    "frontera": 34,
+    "ruido": 58
+  },
+  "sensibilidades": [
+    {
+      "Variante": "DB 1",
+      "eps": 0.1,
+      "min_samples": 5,
+      "filas": 200,
+      "clusters": 1,
+      "ruido": 195,
+      "porcentaje_ruido": 97.5,
+      "mayor_cluster": 5
+    },
+    {
+      "Variante": "DB 2",
+      "eps": 0.2,
+      "min_samples": 5,
+      "filas": 200,
+      "clusters": 7,
+      "ruido": 130,
+      "porcentaje_ruido": 65.0,
+      "mayor_cluster": 14
+    },
+    {
+      "Variante": "DB 3",
+      "eps": 0.3,
+      "min_samples": 5,
+      "filas": 200,
+      "clusters": 5,
+      "ruido": 58,
+      "porcentaje_ruido": 29.0,
+      "mayor_cluster": 66
+    },
+    {
+      "Variante": "DB 4",
+      "eps": 0.3,
+      "min_samples": 10,
+      "filas": 200,
+      "clusters": 3,
+      "ruido": 143,
+      "porcentaje_ruido": 71.5,
+      "mayor_cluster": 30
+    },
+    {
+      "Variante": "DB 5",
+      "eps": 0.45,
+      "min_samples": 5,
+      "filas": 200,
+      "clusters": 1,
+      "ruido": 21,
+      "porcentaje_ruido": 10.5,
+      "mayor_cluster": 179
+    },
+    {
+      "Variante": "DB 6",
+      "eps": 0.45,
+      "min_samples": 10,
+      "filas": 200,
+      "clusters": 1,
+      "ruido": 45,
+      "porcentaje_ruido": 22.5,
+      "mayor_cluster": 155
+    },
+    {
+      "Variante": "HD 1",
+      "min_cluster_size": 5,
+      "min_samples": 5,
+      "cluster_selection_epsilon": 0.0,
+      "filas": 200,
+      "clusters": 8,
+      "ruido": 108,
+      "porcentaje_ruido": 54.0,
+      "mayor_cluster": 18
+    },
+    {
+      "Variante": "HD 2",
+      "min_cluster_size": 10,
+      "min_samples": 5,
+      "cluster_selection_epsilon": 0.0,
+      "filas": 200,
+      "clusters": 4,
+      "ruido": 86,
+      "porcentaje_ruido": 43.0,
+      "mayor_cluster": 59
+    },
+    {
+      "Variante": "HD 3",
+      "min_cluster_size": 15,
+      "min_samples": 5,
+      "cluster_selection_epsilon": 0.0,
+      "filas": 200,
+      "clusters": 2,
+      "ruido": 88,
+      "porcentaje_ruido": 44.0,
+      "mayor_cluster": 77
+    },
+    {
+      "Variante": "HD 4",
+      "min_cluster_size": 5,
+      "min_samples": 10,
+      "cluster_selection_epsilon": 0.0,
+      "filas": 200,
+      "clusters": 2,
+      "ruido": 91,
+      "porcentaje_ruido": 45.5,
+      "mayor_cluster": 99
+    },
+    {
+      "Variante": "HD 5",
+      "min_cluster_size": 10,
+      "min_samples": 10,
+      "cluster_selection_epsilon": 0.0,
+      "filas": 200,
+      "clusters": 2,
+      "ruido": 91,
+      "porcentaje_ruido": 45.5,
+      "mayor_cluster": 99
+    },
+    {
+      "Variante": "HD 6",
+      "min_cluster_size": 10,
+      "min_samples": 5,
+      "cluster_selection_epsilon": 0.15,
+      "filas": 200,
+      "clusters": 4,
+      "ruido": 86,
+      "porcentaje_ruido": 43.0,
+      "mayor_cluster": 59
+    }
+  ],
+  "controlados": [
+    {
+      "familia": "Ruido",
+      "n": 200,
+      "noise": 0.0,
+      "metodo": "DBSCAN",
+      "filas": 200,
+      "clusters": 2,
+      "ruido": 0,
+      "porcentaje_ruido": 0.0,
+      "mayor_cluster": 100
+    },
+    {
+      "familia": "Ruido",
+      "n": 200,
+      "noise": 0.0,
+      "metodo": "HDBSCAN",
+      "filas": 200,
+      "clusters": 2,
+      "ruido": 0,
+      "porcentaje_ruido": 0.0,
+      "mayor_cluster": 100
+    },
+    {
+      "familia": "Ruido",
+      "n": 200,
+      "noise": 0.2,
+      "metodo": "DBSCAN",
+      "filas": 200,
+      "clusters": 5,
+      "ruido": 16,
+      "porcentaje_ruido": 8.0,
+      "mayor_cluster": 94
+    },
+    {
+      "familia": "Ruido",
+      "n": 200,
+      "noise": 0.2,
+      "metodo": "HDBSCAN",
+      "filas": 200,
+      "clusters": 10,
+      "ruido": 56,
+      "porcentaje_ruido": 28.0,
+      "mayor_cluster": 60
+    },
+    {
+      "familia": "Ruido",
+      "n": 200,
+      "noise": 0.8,
+      "metodo": "DBSCAN",
+      "filas": 200,
+      "clusters": 2,
+      "ruido": 59,
+      "porcentaje_ruido": 29.5,
+      "mayor_cluster": 130
+    },
+    {
+      "familia": "Ruido",
+      "n": 200,
+      "noise": 0.8,
+      "metodo": "HDBSCAN",
+      "filas": 200,
+      "clusters": 8,
+      "ruido": 109,
+      "porcentaje_ruido": 54.5,
+      "mayor_cluster": 23
+    },
+    {
+      "familia": "Ruido",
+      "n": 200,
+      "noise": 0.9999,
+      "metodo": "DBSCAN",
+      "filas": 200,
+      "clusters": 5,
+      "ruido": 58,
+      "porcentaje_ruido": 29.0,
+      "mayor_cluster": 66
+    },
+    {
+      "familia": "Ruido",
+      "n": 200,
+      "noise": 0.9999,
+      "metodo": "HDBSCAN",
+      "filas": 200,
+      "clusters": 8,
+      "ruido": 108,
+      "porcentaje_ruido": 54.0,
+      "mayor_cluster": 18
+    },
+    {
+      "familia": "Muestra",
+      "n": 200,
+      "noise": 0.9999,
+      "metodo": "DBSCAN",
+      "filas": 200,
+      "clusters": 5,
+      "ruido": 58,
+      "porcentaje_ruido": 29.0,
+      "mayor_cluster": 66
+    },
+    {
+      "familia": "Muestra",
+      "n": 200,
+      "noise": 0.9999,
+      "metodo": "HDBSCAN",
+      "filas": 200,
+      "clusters": 8,
+      "ruido": 108,
+      "porcentaje_ruido": 54.0,
+      "mayor_cluster": 18
+    },
+    {
+      "familia": "Muestra",
+      "n": 500,
+      "noise": 0.9999,
+      "metodo": "DBSCAN",
+      "filas": 500,
+      "clusters": 4,
+      "ruido": 45,
+      "porcentaje_ruido": 9.0,
+      "mayor_cluster": 437
+    },
+    {
+      "familia": "Muestra",
+      "n": 500,
+      "noise": 0.9999,
+      "metodo": "HDBSCAN",
+      "filas": 500,
+      "clusters": 24,
+      "ruido": 256,
+      "porcentaje_ruido": 51.2,
+      "mayor_cluster": 24
+    },
+    {
+      "familia": "Muestra",
+      "n": 1000,
+      "noise": 0.9999,
+      "metodo": "DBSCAN",
+      "filas": 1000,
+      "clusters": 2,
+      "ruido": 58,
+      "porcentaje_ruido": 5.8,
+      "mayor_cluster": 937
+    },
+    {
+      "familia": "Muestra",
+      "n": 1000,
+      "noise": 0.9999,
+      "metodo": "HDBSCAN",
+      "filas": 1000,
+      "clusters": 44,
+      "ruido": 509,
+      "porcentaje_ruido": 50.9,
+      "mayor_cluster": 25
+    }
+  ],
+  "perfil_arcgis": "trabajo.gdb/perfil_lunas",
+  "mapas": "No aplican: excepción humana acotada P01",
+  "runtime": {
+    "python": "3.13.7",
+    "arcgis_pro": "3.6.2",
+    "licencia": "ArcInfo",
+    "paquetes": {
+      "numpy": "2.2.0",
+      "pandas": "2.3.0",
+      "scikit-learn": "1.6.1",
+      "matplotlib": "3.9.4",
+      "nbclient": "0.8.0",
+      "ipykernel": "6.29.5"
+    }
+  },
+  "png": [
+    "arcgis_escalado.png",
+    "arcgis_original.png",
+    "arcgis_sensibilidad_clusters.png",
+    "arcgis_sensibilidad_ruido.png",
+    "matplotlib_base.png",
+    "matplotlib_control_muestra.png",
+    "matplotlib_control_ruido.png",
+    "matplotlib_sensibilidad_dbscan.png",
+    "matplotlib_sensibilidad_hdbscan.png"
+  ]
+}

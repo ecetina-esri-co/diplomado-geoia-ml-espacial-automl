@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="530" viewBox="0 0 1100 530" role="img" aria-labelledby="title desc">
+<title id="title">Bandas acumulativas, estandarización por filas y entidades aisladas</title>
+<desc id="desc">Cuatro sitios sobre una línea métrica en posiciones cero, cien, doscientos veinte y setecientos metros. A ciento cincuenta metros A conecta con B y B con C; D queda aislado. A quinientos metros C conecta también con D.</desc>
+<rect width="1100" height="530" fill="#f5f8fc"/>
+<g font-family="Arial, sans-serif" fill="#183449">
+<text x="35" y="42" font-size="27" font-weight="bold">La distancia cambia las relaciones, no solo el número del informe</text>
+<text x="35" y="77" font-size="18">Elaboración propia · cuatro sitios ficticios en un eje métrico; no representan un territorio</text>
+<path d="M120 175H960" stroke="#647c8b" stroke-width="2"/>
+<path d="M120 160Q180 110 240 160M240 160Q312 110 384 160" fill="none" stroke="#148082" stroke-width="4"/>
+<g fill="#148082"><circle cx="120" cy="175" r="10"/><circle cx="240" cy="175" r="10"/><circle cx="384" cy="175" r="10"/></g><circle cx="960" cy="175" r="10" fill="#b46423"/>
+<g font-size="19" text-anchor="middle"><text x="120" y="210">A · 0 m</text><text x="240" y="210">B · 100 m</text><text x="384" y="210">C · 220 m</text><text x="960" y="210">D · 700 m</text></g>
+<text x="470" y="145" font-size="18">Banda de 150 m: D sin vecinos</text>
+<rect x="40" y="250" width="480" height="160" rx="12" fill="#e3edf6"/><rect x="555" y="250" width="505" height="160" rx="12" fill="#e3edf6"/>
+<g font-size="19"><text x="60" y="283" font-weight="bold">Pesos a 150 m, sin diagonal</text><text x="60" y="315">Binarios: A→B = 1; B→A = B→C = 1</text><text x="60" y="347">Por filas: A→B = 1; B→A = B→C = 0.5</text><text x="60" y="379">D: fila vacía; no dividir por cero.</text>
+<text x="575" y="283" font-weight="bold">Ampliar a 500 m</text><text x="575" y="315">Se conservan A–B y B–C.</text><text x="575" y="347">Se añaden A–C y C–D (480 m).</text><text x="575" y="379">No es un anillo entre 150 y 500 m.</text></g>
+<text x="35" y="450" font-size="18">Conclusión: al cambiar vecinos cambian los pesos normalizados, la referencia nula y la lectura.</text>
+<text x="35" y="489" font-size="16">Idea docente: vecindad de Moran e incremental; formalización de pesos pendiente de cotejo oficial.</text>
+</g></svg>

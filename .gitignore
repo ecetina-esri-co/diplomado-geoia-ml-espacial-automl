@@ -1,2 +1,58 @@
-# Local Pi runtime state
+# Instrucciones y seguimiento internos: no publicar
+/AGENTS.md
+/odd/
+
+# Estado local de agentes; las futuras skills siguen siendo versionables
 .atl/
+.codegraph/
+.pi/sessions/
+.pi/cache/
+.pi/logs/
+.pi/runtime/
+.pi/settings.json
+.pi-subagents/
+.vscode/
+
+# Solo cinco archivos reutilizables de Obsidian; no workspace, Sync ni plugins
+.obsidian/*
+!.obsidian/app.json
+!.obsidian/appearance.json
+!.obsidian/core-plugins.json
+!.obsidian/graph.json
+!.obsidian/templates.json
+
+# Secretos y estado local: nunca publicar
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+**/credentials.json
+**/secrets.json
+**/token*.txt
+**/token*.json
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+
+# Notebooks y ArcGIS: archivos transitorios
+**/.ipynb_checkpoints/
+*.lock
+**/ImportLog/
+*.aprx
+schema.ini
+
+# Fuentes privadas e insumos heredados: intactos, no autorizados para publicar
+/Datos/
+/3. Machine Learning Espacial y AutoML/
+*.gdb/
+*.gdb.zip
+/99 - Recursos/datos/*
+!/99 - Recursos/datos/README.md
+/99 - Recursos/proyectos_pro/
+/99 - Recursos/salidas_clase_*/
+
+# No ignorar globalmente PNG/SVG docentes ni notebooks aprobados.
+# Revisar permisos antes de autorizar datos crudos o salidas para versionado.
