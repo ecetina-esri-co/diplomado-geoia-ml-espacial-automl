@@ -1,18 +1,227 @@
-# Diplomado GeoIA · Machine Learning Espacial y AutoML
+# Diplomado GeoIA - Vault de notas
 
-**Clase 01 lista para revisión académica humana**, dentro de los módulos 5 y 6. La [[01 - Clases/2026-09-14 - Clase 01 - Clustering espacial|nota central]], cinco conceptos y dos herramientas integran P02 autónoma ejecutada con el Ejercicio 5A completo y copia jurisdiccional preparada externamente; P01 permanece intacta, sin reejecución. Las comprobaciones técnicas y el renderizado local aislado están completos según [[99 - Recursos/Clase 01 - Resultados de prácticas]]. No se comprobó la disposición nativa de Obsidian; no se declara aprobación ni publicación.
+![Obsidian](https://img.shields.io/badge/Obsidian-vault-7C3AED?logo=obsidian&logoColor=white)
+![Markdown](https://img.shields.io/badge/Markdown-notas-000000?logo=markdown&logoColor=white)
+![ArcGIS](https://img.shields.io/badge/ArcGIS-plataforma-2C7AC3?logo=arcgis&logoColor=white)
+![GeoAI](https://img.shields.io/badge/GeoAI-diplomado-2EA043)
+![GitHub](https://img.shields.io/badge/GitHub-repositorio-181717?logo=github&logoColor=white)
+![Idioma](https://img.shields.io/badge/Idioma-espa%C3%B1ol-D4A017)
 
-## Empezar
+Bienvenido al vault de estudio del **Diplomado en Inteligencia Artificial Geoespacial con Plataforma ArcGIS**. Este repositorio se concentra en los **módulos 5 y 6: Machine Learning Espacial y AutoML**, con nueve sesiones de dos horas; no reúne todos los módulos del diplomado.
 
-1. Abrir [[00 - Índice]] y el [Canvas](<00 - Mapa del diplomado.canvas>).
-2. Usar [[Templates/Plantilla - Clase|Plantilla de clase]] para escribir pronto la nota, conceptos y visuales de la sesión autorizada; reutilizar acuerdos, fuentes verificadas y resultados, sin esperar informes previos.
-3. Integrar las prácticas y hacer una revisión final enfocada: **una clase completa → revisión humana → detenerse**. Publicación y siguiente clase requieren autorización explícita separada.
+**Docente:** Fabian Cetina
 
-La [skill integrada](.pi/skills/geoia-ml-espacial-automl/SKILL.md) 2.2 aplica este flujo directo; las dos skills docentes previas están retiradas. Las reglas vigentes de profundidad, seguridad y ejecución están en [AGENTS.md](AGENTS.md). No se exige aprobar cada paso interno ni repetir consultas/notebooks sin cambios o incertidumbre creíble.
+El vault es un **mapa de conocimiento**: las notas de clase se conectan con conceptos, herramientas, prácticas y preguntas. No necesitas leer archivos sueltos en orden alfabético: comienza por el índice y sigue las relaciones que ayuden a entender cada problema.
+
+> **Material disponible:** Clase 01 (14 de septiembre) y Clase 02 (15 de septiembre de 2026), con cinco notebooks. Disponibilidad no significa aprobación académica ni ejecución completa de todas las prácticas. Consulta el estado de cada nota y la tabla de prácticas de esta guía.
+
+## Ruta rápida
+
+1. Descarga [Obsidian desde su sitio oficial](https://obsidian.md/download).
+2. Clona este repositorio o descarga el ZIP, según las opciones siguientes.
+3. En Obsidian, elige **Open folder as vault / Abrir carpeta como bóveda** y selecciona la carpeta del repositorio.
+4. Abre [00 - Índice.md](00%20-%20%C3%8Dndice.md) para elegir la clase; usa el [Mapa del diplomado](00%20-%20Mapa%20del%20diplomado.canvas) como entrada visual.
+
+No necesitas Obsidian Sync, Publish ni plugins adicionales para comenzar. GitHub permite consultar los Markdown y notebooks, pero la navegación con enlaces internos y Canvas se aprovecha mejor en Obsidian.
+
+## Cómo abrir el vault en Obsidian
+
+### Opción recomendada: clonar con Git
+
+Si aún no tienes Git, puedes obtenerlo en [git-scm.com/downloads](https://git-scm.com/downloads). En una terminal, dentro de la carpeta donde quieras guardar el material:
+
+```bash
+# Descarga una copia con historial y posibilidad de recibir actualizaciones.
+git clone https://github.com/ecetina-esri-co/diplomado-geoia-ml-espacial-automl.git
+```
+
+En Obsidian, selecciona **Abrir carpeta como bóveda** y abre **`diplomado-geoia-ml-espacial-automl`**, no únicamente `01 - Clases` o `99 - Recursos`. La raíz contiene el índice y las demás carpetas necesarias para resolver los enlaces.
+
+### Opción simple: descargar ZIP
+
+1. Descarga el [ZIP de la rama main](https://github.com/ecetina-esri-co/diplomado-geoia-ml-espacial-automl/archive/refs/heads/main.zip).
+2. Extrae todo su contenido. **Un archivo `.zip` no se puede abrir directamente como vault.**
+3. Abre en Obsidian la carpeta extraída que contiene `00 - Índice.md`, normalmente `diplomado-geoia-ml-espacial-automl-main`.
+
+Git permite actualizar la misma copia; con ZIP, las actualizaciones se descargan y extraen manualmente.
+
+## Por dónde navegar
+
+| Entrada | Para qué sirve |
+| --- | --- |
+| [00 - Índice.md](00%20-%20%C3%8Dndice.md) | Punto de partida para sesiones y recursos disponibles. |
+| [00 - Mapa del diplomado.canvas](00%20-%20Mapa%20del%20diplomado.canvas) | Vista ligera de las relaciones principales. |
+| [01 - Clases](01%20-%20Clases/) | Notas docentes, objetivos, explicaciones y prácticas. |
+| [02 - Conceptos](02%20-%20Conceptos/) | Definiciones y relaciones para profundizar. |
+| [03 - Herramientas](03%20-%20Herramientas/) | Uso y límites de herramientas del flujo de trabajo. |
+| [04 - Proyectos](04%20-%20Proyectos/) | Entrada para aplicación y seguimiento; no implica proyectos terminados. |
+| [05 - Preguntas](05%20-%20Preguntas/) | Preguntas y temas por resolver. |
+| [99 - Recursos](99%20-%20Recursos/) | Bibliografía, diapositivas, gráficas y evidencia complementaria. |
+| [Notebooks](99%20-%20Recursos/notebooks/) | Prácticas ejecutables; requieren un entorno adecuado. |
+| [Datos](99%20-%20Recursos/datos/) | Entradas seleccionadas y notas de procedencia. |
+
+**Clases disponibles:**
+
+- [Clase 01 — Clustering espacial](01%20-%20Clases/2026-09-14%20-%20Clase%2001%20-%20Clustering%20espacial.md).
+- [Clase 02 — OPTICS y autocorrelación espacial incremental](01%20-%20Clases/2026-09-15%20-%20Clase%2002%20-%20OPTICS%20y%20autocorrelaci%C3%B3n%20espacial%20incremental.md).
+
+Los cinco notebooks están enlazados en **Cómo ejecutar las prácticas**. El calendario no implica que ya existan notas para las nueve sesiones.
+
+## Cómo leer una clase
+
+1. Entra desde el índice y comprueba fecha, tema y estado de la nota.
+2. Lee objetivos, agenda e ideas principales: identifica qué problema se quiere resolver y por qué importa.
+3. Revisa **Diapositivas de referencia**, situadas al inicio de la nota, junto con sus pies e interpretaciones.
+4. Sigue los enlaces a conceptos cuando necesites una definición, un supuesto o una limitación.
+5. Relaciona las herramientas con el problema y lee el código explicado antes de abrir el notebook.
+6. Trabaja la práctica, interpreta las salidas y vuelve a la nota para conectar resultados, preguntas y posibles aplicaciones en un proyecto.
+
+Las notas no son transcripciones literales. Separan contenido de las fuentes, explicaciones docentes y resultados observados; un ejemplo o una ejecución histórica no garantiza el mismo resultado en otro entorno.
+
+## Cómo usar el Canvas
+
+Abre el mapa desde el índice o directamente en Obsidian. Acércate a una tarjeta para leerla y abre su nota para profundizar; sigue las conexiones para ubicar conceptos y clases relacionadas. Vuelve al índice si necesitas una lista ordenada.
+
+El Canvas es una **entrada visual ligera**, no un grafo exhaustivo de todos los archivos ni una certificación del estado de las clases.
+
+## Convenciones del vault
+
+### Enlaces internos
+
+En Obsidian, los enlaces con doble corchete conectan notas existentes. Por ejemplo:
+
+- `[[Aprendizaje no supervisado]]`: sitúa el problema de aprender estructuras sin una etiqueta objetivo.
+- `[[DBSCAN]]`: desarrolla agrupamiento por densidad y su relación con ruido y parámetros.
+- `[[HDBSCAN y OPTICS]]`: permite comparar alternativas y escalas de densidad.
+- `[[ArcGIS Pro - Density-based Clustering]]`: conecta los conceptos con la herramienta.
+
+Sigue los enlaces para entender la relación, no solo para acumular lecturas. Los enlaces Markdown de esta guía también funcionan desde GitHub.
+
+### Tags
+
+Las etiquetas del encabezado ayudan a reconocer el tipo, tema y estado de una nota. Ejemplos presentes en Clase 02: `tipo/clase`, `estado/borrador`, `tema/geoia`, `tema/estadistica-espacial` y `fuente/grabacion`. Puedes buscarlas en Obsidian; una etiqueta de borrador es una advertencia de estado, no una aprobación.
+
+### Diapositivas clave
+
+Las imágenes fuente se encuentran bajo el encabezado real **Diapositivas de referencia**, con atribución, localizador y una interpretación de su propósito. No las confundas con los diagramas Mermaid y las gráficas SVG explicativas: estos complementan la lectura, pero no sustituyen las diapositivas originales.
+
+Consulta [Enlaces y bibliografía](99%20-%20Recursos/Enlaces%20y%20bibliograf%C3%ADa.md) y las referencias junto a cada afirmación. Conserva las atribuciones al reutilizar material y respeta los derechos de sus fuentes.
+
+## Cómo ejecutar las prácticas
+
+**Obsidian sirve para leer las notas; no ejecuta archivos `.ipynb`.** Abre el notebook en **ArcGIS Pro**, o en Jupyter/VS Code con un kernel del entorno Python de ArcGIS Pro y una licencia disponible. Python genérico y Colab no aportan ArcPy; no intentes resolverlo con `pip install arcpy`.
+
+El entorno observado es **ArcGIS Pro 3.6.2, ArcInfo (Advanced)**. La licencia importa: por ejemplo, la operación Identity de Clase 01 P02 requiere el nivel adecuado. Antes de ejecutar, revisa requisitos y entradas de la práctica.
+
+| Práctica | Notebook | Última evidencia disponible |
+| --- | --- | --- |
+| Clase 01 · P01 | [Comparación DBSCAN/HDBSCAN sintética](99%20-%20Recursos/notebooks/Clase%2001%20-%20Practica%2001%20-%20Comparacion%20DBSCAN%20HDBSCAN%20sintetica.ipynb) | Ejecución reciente completa; datos sintéticos, sin georreferenciación. |
+| Clase 01 · P02 | [Clustering Bomberos con ArcGIS Pro](99%20-%20Recursos/notebooks/Clase%2001%20-%20Practica%2002%20-%20Clustering%20Bomberos%20con%20ArcGIS%20Pro.ipynb) | Ejecución reciente completa. |
+| Clase 02 · P01 | [OPTICS y abejas](99%20-%20Recursos/notebooks/Clase%2002%20-%20Practica%2001%20-%20OPTICS%20y%20abejas.ipynb) | Ejecución reciente completa. |
+| Clase 02 · P02 | [Colegios y escala espacial](99%20-%20Recursos/notebooks/Clase%2002%20-%20Practica%2002%20-%20Colegios%20y%20escala%20espacial.ipynb) | Última ejecución guardada detenida por licencia; nueva ejecución pendiente. |
+| Clase 02 · P03 | [Viviendas turísticas y Moran](99%20-%20Recursos/notebooks/Clase%2002%20-%20Practica%2003%20-%20Viviendas%20turisticas%20y%20Moran.ipynb) | Última ejecución guardada detenida por licencia; nueva ejecución pendiente. |
+
+> La incorporación de los datos locales de colegios no reejecutó ni modificó los notebooks. Los errores guardados de P02/P03 son anteriores a esa copia; sus resultados históricos no acreditan una ejecución nueva completa.
+
+**Secuencia de trabajo:** lee primero los objetivos en Markdown; después revisa la primera celda de configuración (`ROOT`, `DATA_DIR`, `OUTPUT_DIR` y, cuando corresponda, `PREPARED_JURIS`). Reinicia el kernel y ejecuta todas las celdas en orden (**Run All**). Si una celda falla, detente e interpreta el error antes de continuar: evita mezclar resultados anteriores con una ejecución incompleta.
+
+`ROOT = None` busca el vault desde la carpeta de trabajo y sus ancestros. Si inicias Jupyter fuera de ese árbol, sustituye **la primera asignación** por `ROOT = Path('/ruta/a/tu/vault')`, usando la ruta real de tu copia y conservando el import de `Path` que ya incluye la celda.
+
+| Práctica | Configuración de entrada desde la raíz del vault |
+| --- | --- |
+| C01 P01 | `DATA_DIR`: `99 - Recursos/datos`; genera la muestra sintética. Conserva el auxiliar local declarado por el notebook. |
+| C01 P02 | `DATA_DIR`: `Datos`; `PREPARED_JURIS`: `99 - Recursos/datos/p02_jurisdicciones_preparadas/jurisdicciones.gdb/Jurisdicciones_Bomberos`. |
+| C02 P01 | `DATA_DIR`: `Datos`. |
+| C02 P02 | Cambia la ruta externa predeterminada por `99 - Recursos/datos/clase_02_colegios/colegios.gdb`, como se muestra abajo. |
+| C02 P03 | `DATA_DIR`: `99 - Recursos/datos/clase_02_viviendas_turisticas/viviendas.gdb`. |
+
+En **C02 P02**, después de resolver `ROOT`, reemplaza únicamente la asignación de `DATA_DIR` en tu copia de estudiante:
+
+```python
+# Usa la copia local de colegios como entrada de solo lectura.
+DATA_DIR = ROOT / '99 - Recursos/datos/clase_02_colegios/colegios.gdb'
+```
+
+El código posterior ya añade `Colegios_Colombia`; no agregues ese nombre a `DATA_DIR`. El notebook aún muestra la ruta anterior al vault hermano en su configuración y explicación: **para esta copia distribuida, aplica el cambio anterior antes de Run All**. La [procedencia de colegios](99%20-%20Recursos/datos/clase_02_colegios/README.md) registra 10.617 puntos y las comprobaciones de conservación; no se trata de un censo exhaustivo.
+
+Mantén todas las entradas en solo lectura y configura `OUTPUT_DIR` en una carpeta de resultados separada. No sobrescribas originales ni ejecuciones que quieras conservar. Revisa la [guía de datos](99%20-%20Recursos/datos/README.md) y los requisitos de cada notebook para interpretar las entradas y los insumos preparados.
+
+## Rutina recomendada para estudiar
+
+1. Ubica la sesión en el índice y formula una pregunta que quieras responder.
+2. Lee los objetivos y relaciona el tema con lo que ya conoces.
+3. Revisa las diapositivas y explica con tus palabras una idea principal.
+4. Consulta conceptos y herramientas; anota supuestos y límites.
+5. Prepara el entorno y los datos antes de ejecutar la práctica.
+6. Interpreta mapas, gráficas y métricas: distingue observación, explicación y limitaciones.
+7. Escribe una conclusión, una pregunta pendiente y una posible aplicación; vuelve a la nota para conectar lo aprendido.
+
+## Cómo recibir nuevas clases
+
+Clona una sola vez y actualiza cuando se publique nuevo material. Después, abre el índice para ver qué cambió: no todas las sesiones del calendario tienen todavía una nota disponible.
+
+### Si clonaste con Git
+
+Antes de actualizar, revisa tus cambios locales:
+
+```bash
+# Desde la carpeta del repositorio, comprueba si tienes cambios propios.
+git status --short
+```
+
+Si aparecen cambios o archivos nuevos, revísalos y respalda tus apuntes antes de continuar. No uses un reset ni un stash a ciegas para eliminar un conflicto. Cerrar Obsidian puede evitar ediciones simultáneas, pero **no demuestra que tu copia esté limpia**.
+
+### Ejemplo completo
+
+Desde la carpeta que contiene el repositorio, y una vez preservados tus cambios:
+
+```bash
+cd diplomado-geoia-ml-espacial-automl
+# Comprueba el estado antes de traer material publicado.
+git status --short
+# Continúa solo si el estado está resuelto; no crea una fusión automática.
+git pull --ff-only
+```
+
+Si Git informa un conflicto o que no puede avanzar, detente y revisa la situación sin descartar archivos. Las novedades pueden aparecer en el índice, `01 - Clases`, conceptos, herramientas, notebooks o recursos; vuelve al índice después de actualizar.
+
+### Si descargaste ZIP
+
+Descarga nuevamente el ZIP, extráelo en **otra carpeta** y abre esa carpeta como vault. Conserva o respalda tus notas antes de cambiar de copia. Una descarga ZIP no tiene el historial de Git: **no se actualiza con `git pull`**.
+
+## Si haces apuntes propios
+
+Para simplificar las actualizaciones, guarda tus apuntes en un vault o carpeta personal fuera del clon, con enlaces o referencias a las clases. Si decides anotarlos dentro de tu copia, mantén un respaldo y revisa el estado de Git antes de actualizar.
+
+No sobrescribas ni elimines apuntes personales al reemplazar carpetas o extraer un ZIP. Separa tus conclusiones de las notas docentes para reconocer la fuente y el estado de cada idea.
+
+## Si quieres colaborar
+
+Leer, clonar o descargar no requiere permisos de escritura. Para enviar cambios al repositorio necesitas **autorización y permisos de colaborador**; si no los tienes, conserva tus apuntes y comparte la propuesta con el docente.
+
+Con autorización, actualiza primero una copia limpia, revisa `git status --short` y edita notas conectadas con el índice o con una clase. Comprueba enlaces y atribuciones. No publiques transcripciones crudas, logs, temporales, capturas sin valor conceptual, credenciales ni datos personales.
+
+Ejemplo para una contribución autorizada sobre el README; cambia la selección solo por los archivos que realmente hayas revisado:
+
+```bash
+# Comprueba y preserva cambios locales antes de actualizar.
+git status --short
+git pull --ff-only
+# Después de editar, revisa exactamente lo que vas a compartir.
+git diff -- README.md
+git diff --check
+git add -- README.md
+git diff --cached -- README.md
+git commit -m "Aclara la guía de estudio del diplomado"
+# Solo para colaboradores autorizados y en la rama acordada.
+git push
+```
+
+Selecciona rutas explícitas; evita `git add .`, que puede incorporar archivos ajenos, como `__pycache__`. No publiques datos ni recursos de terceros sin comprobar su autorización de redistribución.
 
 ## Calendario definitivo
 
-Septiembre de **2026**; cada sesión dura **2 horas**: nueve sesiones, 18 horas.
+Septiembre de **2026**. Cada sesión dura **2 horas**: nueve sesiones, **18 horas** en total. Actualmente están disponibles las notas de Clase 01 (14/09) y Clase 02 (15/09); las demás fechas son programación, no enlaces a material ya publicado.
 
 | Módulo | Tema | Horas | Fechas definitivas — septiembre de 2026 |
 | --- | --- | ---: | --- |
@@ -24,43 +233,4 @@ Septiembre de **2026**; cada sesión dura **2 horas**: nueve sesiones, 18 horas.
 | **Subtotal módulo 6** | | **8** | **4 sesiones** |
 | **Total del bloque** | | **18** | **9 sesiones** |
 
-Solo está confirmada la identificación Clase 01 para el 14/09. El índice usa fechas para las demás sesiones, sin inventar numeración o enlaces a notas inexistentes.
-
-## Estructura actual
-
-| Ubicación | Estado y función |
-| --- | --- |
-| `00 - Índice.md` / `00 - Mapa del diplomado.canvas` | Navegación base, no contenido docente terminado |
-| `Templates/Plantilla - Clase.md` | Plantilla reutilizable para redactar directamente |
-| `01 - Clases/2026-09-14 - Clase 01 - Clustering espacial.md` | Nota central actualizada; comprobaciones técnicas completas, pendiente revisión académica humana |
-| `02 - Conceptos/`, `03 - Herramientas/` | Cinco notas de conceptos y dos de herramientas redactadas y enlazadas desde la clase |
-| `99 - Recursos/clase-01-*.svg`, `99 - Recursos/clase-01-slide-*.png` | Gráficas y capturas inspeccionadas; renderizado local aislado verificado, no interfaz nativa de Obsidian |
-| `04 - Proyectos/`, `05 - Preguntas/` | Notas de entrada con estado pendiente |
-| `99 - Recursos/Enlaces y bibliografía.md` | Referencias oficiales reutilizables según afirmación y versión |
-| `99 - Recursos/notebooks/` | Dos notebooks de Clase 01 ejecutados; no equivalen al paquete docente completo |
-| `99 - Recursos/datos/` | Guía e insumos seleccionados según disponibilidad; reutilizar sin duplicar |
-| `.obsidian/` | Cinco JSON reutilizables; Templates activo, Sync y Publish desactivados |
-| `.pi/skills/geoia-ml-espacial-automl/` | Única skill integrada 2.2; referencia consultada según necesidad |
-| `99 - Recursos/Matriz - Análisis exploratorio y ArcGIS.md` | Contraste documental de antecedentes anteriores a Clase 13 y capacidades; sin ejecución |
-
-`Datos/` y `3. Machine Learning Espacial y AutoML/` son insumos preexistentes, conservados intactos y excluidos de Git por precaución. Los nuevos insumos seleccionados usarán por defecto `99 - Recursos/datos/`, con rutas configurables incluso externas. Las copias y salidas se mantienen separadas en `99 - Recursos/salidas_clase_NN/practica_PP/` o equivalente externo. Las ejecuciones existentes de Clase 01 se conservan; P01 no se repitió y P02 ya ejecutó el alcance actualizado en `ejecucion_20260915T220908_d62e311d`, con copia jurisdiccional preparada fuera del notebook.
-
-## Fuentes y alcance
-
-Las grabaciones **13–15 y 16–20** del vault `../diplomado_geoia` son ocho fuentes, no nueve clases destino. La correspondencia de contenidos se documentará por sesión, sin asumir relación uno a uno. Los PowerPoint locales sirven de referencia; no se producirán nuevos PPTX sin petición explícita. Cada nota de clase incorpora **seis diapositivas fuente como objetivo**, limpias, completas, legibles, pertinentes y distintas, visibles al inicio después del encabezado y antes de objetivos/agenda. Solo se admiten menos si la fuente realmente no ofrece suficientes imágenes aptas, con una breve justificación explícita y sin relleno. Cada captura lleva título, fuente/localizador e interpretación. SVG propios, gráficas y mapas no cuentan entre las seis; Mermaid, gráficas explicativas y mapas ArcGIS pertinentes siguen siendo obligatorios.
-
-Se adaptaron la plantilla y el patrón de navegación original, sin copiar las 39 clases ni su red de conceptos. Se conservan las exigencias de español claro y profundo, fuentes junto a las afirmaciones, Mermaid y gráficas en cada clase/concepto, y notebooks con celdas comentadas, mapas y gráficos ArcGIS interpretados.
-
-## Selección de prácticas y capacidades
-
-Consultar solo secciones pertinentes de la [matriz EDA y ArcGIS](<99 - Recursos/Matriz - Análisis exploratorio y ArcGIS.md>) ante una operación o duda; no convertir antecedentes históricos en evidencia actual. **Una práctica real, un notebook autónomo**, no uno por algoritmo: datos de solo lectura, salidas aisladas y código importante explicado dentro de la nota. Inspeccionar únicamente campos, geometrías y requisitos relevantes; ArcGIS primero sin desplazar las bibliotecas Python justificadas de la fuente.
-
-Los acuerdos P1–P7 y dos notebooks de Clase 01 no se reabren. P01 `make_moons` es exclusivamente sintética: sin contraste Bogotá, EPSG ficticio ni mapas geográficos; mantiene gráficos tabulares ArcGIS y conceptuales. Esta excepción no es general. P02 completa `DiplomadoGeoIA Ejercicio 5A.docx` en un notebook Python autosuficiente, sin ModelBuilder manual ni auxiliar personalizado compartido: objetivos en Markdown, primera celda de código corta `DATA_DIR`/`OUTPUT_DIR`, EDA visible (diccionario de campos, nulos/ceros, claves, XY, tiempo, CRS y gráficos/mapas ArcGIS) antes de modelos; DBSCAN 100/350 m → MeanCenter sin ruido por `CLUSTER_ID` → Identity con copia jurisdiccional válida → Statistics COUNT/AddJoin/CopyFeatures → HDBSCAN 100 → OPTICS 100/350 m y sensibilidad automática predeterminada con mapa, barras y perfil de alcanzabilidad nativos.
-
-La preparación geométrica P02 se realiza por separado, fuera de la práctica: crear una copia nueva jurisdiccional en `99 - Recursos/datos/`, comprobar con CheckGeometry y, solo si persisten errores, aplicar RepairGeometry exclusivamente sobre esa copia con `KEEP_NULL`, preservando IDs/conteo/atributos, informando cambios y CheckGeometry posterior. Si ya es válida, no reparar. El notebook no contiene ni ejecuta RepairGeometry ni un script de preparación: consume el insumo preparado como entrada de solo lectura; puede comprobar su calidad y se detiene si no es válido para Identity. Su ruta puede configurarse en la primera celda de código junto a `DATA_DIR`/`OUTPUT_DIR`, sin duplicar incidentes. Errores puntuales/desconocidos siguen fatales y requieren otra decisión; sin deduplicación, imputación ni asignación jurisdiccional forzada. Reportar frontera/coincidencias múltiples/ausentes; una copia reparada no certifica límites legales. No es permiso general de reparación ni de modificar originales, DOCX/TXT fuente o la skill del otro diplomado.
-
-## Validación y siguiente paso
-
-P02 completó el alcance autorizado; P01 se preservó sin reejecución y la evidencia histórica permanece separada. La comprobación técnica y visual local aislada de Clase 01 está registrada en [[99 - Recursos/Clase 01 - Resultados de prácticas]], junto con sus límites; se reutilizan [[99 - Recursos/Clase 01 - Fuentes y acuerdos|acuerdos y evidencia existentes]]. Nueve Mermaid y cinco SVG únicos se renderizaron e inspeccionaron sin recortes; no se comprobó la disposición nativa de Obsidian. No se requieren informes separados, runners nuevos ni ensayos como preinsumos; se conservan los existentes. Revisar al final coherencia, referencias, enlaces, visuales y salidas, revalidando solo piezas afectadas. La agenda de 120 minutos es estimada; el tiempo de ejecución medido no demuestra un ensayo docente.
-
-**Pendiente:** presentar Clase 01 a revisión académica humana y detenerse, sin iniciar otra clase como parte de este cierre. La verificación técnica no equivale a aprobación académica. Antes de staging o publicación revisar licencias y privacidad; sin autorización automática de commit, push o redistribución. Desactivar Obsidian Sync no desactiva la sincronización externa del sistema de archivos.
+Vuelve al [índice](00%20-%20%C3%8Dndice.md) para comenzar o retomar tu estudio.
