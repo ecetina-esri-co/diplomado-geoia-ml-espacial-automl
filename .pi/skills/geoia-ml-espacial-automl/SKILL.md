@@ -4,52 +4,45 @@ description: "GeoIA, clase, grabación, Obsidian: prepara una sola clase complet
 license: Apache-2.0
 metadata:
   author: gentleman-programming
-  version: "2.2"
+  version: "2.3"
 ---
 
 ## Activation Contract
 
-Activa para una sesión seleccionada y autorizada de los módulos 5–6. Ajustar instrucciones no autoriza producir material. Lee una vez el contrato necesario de AGENTS y calendario; reutiliza contexto cargado y consulta la referencia solo según necesidad. Clase 01 y sus dos prácticas ya están autorizadas: no reabrir acuerdos P1–P7.
+Activa para una clase autorizada de los módulos 5–6 o para ajustar este contrato editorial. Ajustar instrucciones no autoriza producir otra clase. Consulta el alcance vigente en [AGENTS](../../../AGENTS.md), no lo deduzcas de materiales históricos.
 
 ## Hard Rules
 
-- Muestra siempre **Docente:** Fabian Cetina, con esa escritura exacta, en cada nota de clase destino; conserva por separado autores y docentes reales de las fuentes en procedencia y citas.
-
-- Conserva profundidad docente y todos los ejercicios/secuencia: problema, importancia, analogía limitada, definición formal, supuestos, método, parámetros, evaluación, límites, ejemplo real atribuible y relaciones explicadas. Español profesional; menos informes, no menos contenido.
-- Cada clase y concepto exige Mermaid y gráficas independientes incrustadas, interpretadas y respaldadas. En cada nota de clase, incorpora obligatoriamente seis diapositivas fuente limpias, completas, legibles, pertinentes y distintas en `## Diapositivas de referencia`, al inicio tras el encabezado y antes de objetivos/agenda, incrustadas sin bloques colapsados. Cada una lleva título, fuente/tiempo o archivo de presentación verificado/número de diapositiva, pie/interpretación y propósito de selección. Solo admite menos tras revisión directa que confirme insuficientes diapositivas aptas; explica brevemente, sin relleno: fallo de acceso/extracción no demuestra insuficiencia. Demos, interfaz, participantes, controles y duplicados no cuentan; tampoco SVG propios, gráficas ni mapas sustituyen las seis. Conserva Mermaid y gráficas independientes, sin ese límite. Declara renderizado no comprobado.
-- Incluye código importante comentado dentro de la nota, con lenguaje, imports, configuración, llamadas, explicación, procedencia y estado; no basta enlazar notebooks.
-- Una práctica real, un notebook autónomo: objetivos primero en Markdown y primera celda de código corta DATA_DIR/OUTPUT_DIR, celdas educativas comentadas, interpretación de cada salida y evidencia real. ArcGIS primero, complementos justificados, originales intactos; no inventes APIs ni sustituyas gráficos ArcGIS bloqueados.
-- Exige mapas/vistas geoespaciales y gráficos ArcGIS pertinentes. Solo P01 Clase 01 `make_moons` está exceptuada de mapas: sintética, sin Bogotá ni EPSG ficticio; mantiene gráficos tabulares ArcGIS y conceptuales. P02: Ejercicio 5A DOCX completo en Python autónomo, sin ModelBuilder manual ni auxiliar personalizado compartido; EDA visible antes de modelos, DBSCAN → MeanCenter sin ruido → Identity con copia válida → Statistics COUNT/AddJoin/CopyFeatures → HDBSCAN → OPTICS, con visuales nativos y parámetros de AGENTS. La preparación geométrica se realiza por separado, fuera de la práctica, sobre una copia nueva jurisdiccional en `99 - Recursos/datos/`: CheckGeometry antes/después y RepairGeometry solo si persisten errores, con `KEEP_NULL` y preservación de IDs/conteo/atributos. El notebook no contiene ni ejecuta RepairGeometry ni un script de preparación; consume el insumo preparado de solo lectura, puede comprobar su calidad y se detiene si no es válido para Identity. Configura su ruta en la primera celda de código junto a DATA_DIR/OUTPUT_DIR, sin duplicar incidentes. No reparar si ya es válida ni extender el permiso; errores puntuales/desconocidos fatales. Informar cambios y coincidencias fronterizas/múltiples/ausentes sin forzar asignación ni certificar límites legales.
-- Reutiliza fuentes verificadas; cita cerca y distingue fuente, corrección respaldada y ejecución. Excepción obligatoria en cada procesamiento: abre y revisa el video fuente correcto con Chrome DevTools MCP en Stream/SharePoint visible autorizado; comprueba reproductor/contenido multimedia real, no solo URL/título. Revisa contenido docente, demos, ejercicios y orden con reproducción/línea de tiempo visibles; transcripción visible solo como apoyo. Notas, notebooks, transcripciones guardadas, documentos fuente, acceso histórico y evidencia previa nunca sustituyen revisar el video en esta sesión; no repitas segmentos ya verificados en ella. Registra identidad, tiempos/cobertura y pendientes en procedencia existente, distinguiendo apertura, revisión parcial y cobertura docente pertinente completa; abrir o muestrear diapositivas no basta. Captura solo imágenes académicas limpias; sin vías alternativas, API privada, elusión, descargas prohibidas, transcripciones crudas, credenciales ni metadatos privados retenidos.
-- Registra acuerdos/resultados brevemente en nota/notebook; reutiliza evidencia existente, no exijas informes, inventarios exhaustivos, runners, hashes ni ensayos como prerrequisitos. No elimines los existentes.
-- No instales, consumas créditos, alteres originales, crees PPTX, hagas commit/push, publiques ni avances de clase sin autorización específica.
+- Aplica AGENTS como autoridad de seguridad, fuentes, visuales, código/notebooks y ArcGIS; esta skill no sustituye ni flexibiliza sus obligaciones.
+- Lee allí «Profundidad y fuentes», «Visuales y código que enseñan» y «Prácticas, datos y ArcGIS» antes de producir material. Solo al trabajar Clase 01 aplica sus excepciones P01/P02; no las traslades a otras clases.
+- Escribe para comprender: parte de una pregunta y un ejemplo, introduce el método preciso cuando hace falta y conecta demostración con interpretación y límites. No impongas encabezados repetidos, cuotas de texto ni listas de requisitos por concepto.
+- Conserva citas cercanas y explicaciones de salidas; reúne evidencia operativa en un registro final breve enlazado a archivos existentes, sin borrar la histórica.
 
 ## Decision Gates
 
 | Situación | Acción |
 | --- | --- |
-| Alcance/frontera ambiguos, recorte o cambio de secuencia, nuevos datos/accesos o acción restringida | Consulta la decisión concreta |
-| Chrome DevTools MCP o acceso al video no disponibles | Bloquea cobertura dependiente y declaración de clase procesada/completa; material independiente solo como borrador |
-| Fuente, entrada/modelo, licencia, ejecución o visual obligatorio faltante | Bloquea solo lo dependiente; informa pendiente, continúa escritura independiente |
-| Corrección técnica respaldada o elección editorial reversible autorizada | Resuelve y anota sin aprobación por frase |
-| Evidencia vigente sin cambios | Reutiliza salvo revisión directa obligatoria del video en esta sesión; verifica otros cambios o incertidumbre creíble |
+| Cambio de alcance, ejercicio/secuencia o acción restringida no autorizado | Consulta la decisión concreta según AGENTS |
+| Falta revisión directa del video, entrada, licencia, ejecución o visual obligatorio | Bloquea solo lo dependiente; continúa lo independiente como borrador, sin declarar completa la clase |
+| Corrección técnica respaldada o decisión editorial reversible dentro del alcance | Resuelve sin aprobación por frase; distingue la adaptación de la fuente |
+| Evidencia vigente sin cambios | Reutiliza; el video conserva su revisión directa obligatoria en cada sesión de procesamiento |
 
 ## Execution Steps
 
-1. Abre y revisa obligatoriamente el video seleccionado mediante Chrome DevTools MCP según la regla de fuentes; registra cobertura real y pendientes. Lee fuentes necesarias de la única sesión; reutiliza acuerdos y pasajes como apoyo. No mapees las nueve clases para actuar en una.
-2. Escribe pronto desde la plantilla: objetivos, agenda estimada de 120 minutos, contenido, código, conceptos y visuales. Marca borrador/resultados pendientes sin esperar notebooks.
-3. Trabaja directamente en un notebook por práctica; inspecciona datos/entorno y secciones EDA pertinentes, ejecuta e interpreta. Reutiliza auxiliares salvo en P02, que debe ser autosuficiente sin auxiliar personalizado compartido; crea automatización solo por necesidad concreta.
-4. Integra resultados y revisa una vez coherencia, enlaces, referencias, visuales y salidas; revalida solo piezas afectadas. Separa duración medida de estimación, sin ensayo obligatorio.
-5. Entrega la clase completa a revisión humana y detente. Avances internos no equivalen a aprobación; publicación y otra clase requieren permiso separado.
+1. Confirma la clase y acuerdos vigentes. Revisa su video mediante Chrome DevTools MCP conforme a AGENTS; registra cobertura real, no solo apertura. Lee únicamente las demás fuentes necesarias.
+2. Escribe pronto desde la [plantilla](<../../../Templates/Plantilla - Clase.md>): objetivos, agenda estimada de 120 minutos y relato con código y visuales junto al argumento. Los resultados pendientes no detienen las partes independientes.
+3. Desarrolla un notebook autónomo por práctica. Inspecciona datos y requisitos pertinentes, enseña antes de ejecutar e interpreta lo observado. Prefiere trabajo directo en ArcGIS Pro; reutiliza auxiliares permitidos y automatiza solo ante necesidad concreta.
+4. Integra resultados y revisa coherencia, fuentes, enlaces, visuales y salidas modificados o inciertos. Separa ejecución medida de agenda estimada; no exijas ni inventes ensayo.
+5. Entrega para revisión humana y detente al concluir la clase autorizada. Informa obligatorios pendientes sin presentar el paquete como completo.
 
 ## Output Contract
 
-Devuelve archivos reales, resultados/comprobaciones observados, límites y pendientes concisos. No declares completo lo obligatorio faltante ni produzcas un informe separado por defecto.
+Devuelve archivos cambiados, comprobaciones observadas, límites y siguiente paso de forma concisa. Sin informe separado por defecto ni aprobación académica implícita.
 
 ## References
 
-- [Reglas compartidas](../../../AGENTS.md).
+- [Políticas y autorizaciones vigentes](../../../AGENTS.md).
 - [Calendario](../../../README.md).
-- [Plantilla](<../../../Templates/Plantilla - Clase.md>).
-- [Ayuda por necesidad y atribución](references/procesamiento-clase.md).
-- [Matriz EDA: secciones pertinentes](<../../../99 - Recursos/Matriz - Análisis exploratorio y ArcGIS.md>).
+- [Plantilla docente](<../../../Templates/Plantilla - Clase.md>).
+- [Guía opcional de escritura y atribución](references/procesamiento-clase.md).
+- [Matriz EDA: consultar solo la operación pertinente](<../../../99 - Recursos/Matriz - Análisis exploratorio y ArcGIS.md>).

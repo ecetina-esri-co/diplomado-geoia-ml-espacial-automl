@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="460" viewBox="0 0 1000 460" role="img" aria-labelledby="title desc">
+<title id="title">NetCDF: valores y contexto</title><desc id="desc">Matriz hipotética de conteos de dos ubicaciones en tres periodos, acompañada por atributos que permiten interpretarla.</desc>
+<rect width="1000" height="460" fill="#f8fbfc"/>
+<g font-family="Arial,sans-serif" fill="#173b4a">
+<text x="40" y="48" font-size="27" font-weight="bold">NetCDF: no solo números</text>
+<text x="40" y="82" font-size="18">Ejemplo hipotético · COUNT por ubicación y periodo</text>
+<g fill="#e7f2f5" stroke="#315f72" stroke-width="2">
+<rect x="145" y="140" width="390" height="160"/>
+<path d="M275 140V300 M405 140V300 M145 220H535"/>
+</g>
+<g font-size="23" text-anchor="middle">
+<text x="210" y="125">t1</text><text x="340" y="125">t2</text><text x="470" y="125">t3</text>
+<text x="210" y="188">2</text><text x="340" y="188">5</text><text x="470" y="188">4</text>
+<text x="210" y="268">1</text><text x="340" y="268">0</text><text x="470" y="268">3</text>
+</g>
+<text x="75" y="190" font-size="23">A</text><text x="75" y="270" font-size="23">B</text>
+<rect x="600" y="140" width="350" height="160" rx="12" fill="#eee5f3"/>
+<text x="625" y="177" font-size="22" font-weight="bold">Atributos para interpretar</text>
+<text x="625" y="215" font-size="19">Tiempo: unidades y calendario</text>
+<text x="625" y="250" font-size="19">Espacio: coordenadas y CRS</text>
+<text x="625" y="280" font-size="19">Variable: significado de COUNT</text>
+<text x="40" y="355" font-size="19">Las dimensiones indexan; las variables contienen; los atributos describen.</text>
+<text x="40" y="390" font-size="17">Esquema simplificado: no reproduce el almacenamiento físico del archivo local.</text>
+<text x="40" y="430" font-size="15">Elaboración docente · Ideas: NSF Unidata, NetCDF; referencias en la nota NetCDF.</text>
+</g></svg>

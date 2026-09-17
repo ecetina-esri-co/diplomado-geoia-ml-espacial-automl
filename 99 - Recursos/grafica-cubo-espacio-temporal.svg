@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="320" viewBox="0 0 880 320" role="img" aria-labelledby="title desc">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#315f72"/></marker>
+  <style><![CDATA[
+    .bg{fill:#f8fbfc}.title{font:700 24px Arial,sans-serif;fill:#173b4a}.box{fill:#e7f2f5;stroke:#315f72;stroke-width:2;rx:14}.txt{font:600 15px Arial,sans-serif;fill:#173b4a;text-anchor:middle}.note{font:400 13px Arial,sans-serif;fill:#3b5560;text-anchor:middle}.arrow{stroke:#315f72;stroke-width:2.5;fill:none;marker-end:url(#arrow)}
+  ]]></style>
+</defs>
+<rect class="bg" width="880" height="320"/>
+<title id="title">Cubo espacio-temporal</title>
+<desc id="desc">Un cubo espacio-temporal agrega eventos por celda espacial y por lapso temporal para analizar evolución territorial.</desc>
+<text class="title" x="440" y="52" text-anchor="middle">Cubo espacio-temporal</text>
+<text class="note" x="440" y="88">Un cubo espacio-temporal agrega eventos por celda espacial y por lapso temporal para analizar evolución territorial.</text>
+<rect class="box" x="35" y="155" width="135" height="72" rx="14"/>
+<text class="txt" x="102.5" y="199">Ubicaciones</text>
+<path class="arrow" d="M175,191.0 L188,191.0"/>
+<rect class="box" x="196" y="155" width="135" height="72" rx="14"/>
+<text class="txt" x="263.5" y="199">Bins espaciales</text>
+<path class="arrow" d="M336,191.0 L349,191.0"/>
+<rect class="box" x="357" y="155" width="135" height="72" rx="14"/>
+<text class="txt" x="424.5" y="186">Intervalos</text>
+<text class="txt" x="424.5" y="207">temporales</text>
+<path class="arrow" d="M497,191.0 L510,191.0"/>
+<rect class="box" x="518" y="155" width="135" height="72" rx="14"/>
+<text class="txt" x="585.5" y="186">Variable</text>
+<text class="txt" x="585.5" y="207">agregada</text>
+<path class="arrow" d="M658,191.0 L671,191.0"/>
+<rect class="box" x="679" y="155" width="135" height="72" rx="14"/>
+<text class="txt" x="746.5" y="186">Patrón</text>
+<text class="txt" x="746.5" y="207">espacio-tiempo</text>
+<text class="note" x="440" y="285">La visualización orienta la interpretación; la decisión requiere escala, calidad de datos y pregunta analítica.</text>
+</svg>

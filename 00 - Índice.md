@@ -17,13 +17,13 @@ Clase 01 tiene nota central, cinco conceptos, dos herramientas y ambos notebooks
 
 ## Sesiones pendientes
 
-Cada sesión dura dos horas en septiembre de 2026. Solo la primera tiene número confirmado; las demás se identifican por fecha hasta acordar su numeración. No hay enlaces a clases inexistentes.
+Cada sesión dura dos horas en septiembre de 2026. Clase 03 se incorpora como borrador migrado; las demás entradas conservan su seguimiento previo. No hay enlaces a clases inexistentes.
 
 | Fecha | Identidad confirmada | Tema | Estado |
 | --- | --- | --- | --- |
 | 2026-09-14 | Clase 01 | Clustering espacial | [[01 - Clases/2026-09-14 - Clase 01 - Clustering espacial|Nota y prácticas]] actualizadas; comprobación técnica y renderizado local aislado completos, revisión académica humana pendiente. P1–P7 aprobadas. |
 | 2026-09-15 | Por fecha | Clustering espacial | Pendiente |
-| 2026-09-16 | Por fecha | Minería de patrones espacio-temporales | Pendiente |
+| 2026-09-16 | Clase 03 | Minería de patrones espacio-temporales | [[01 - Clases/2026-09-16 - Clase 03 - Cubos espacio-temporales y patrones emergentes|Borrador migrado]]; video parcialmente revisado y cierre del kernel fallido. No procesada completa. |
 | 2026-09-17 | Por fecha | Minería de patrones espacio-temporales | Pendiente |
 | 2026-09-21 | Por fecha | Minería de patrones espacio-temporales | Pendiente |
 | 2026-09-22 | Por fecha | Regresión y clasificación basada en bosques | Pendiente |
@@ -49,6 +49,17 @@ Prácticas ejecutadas:
 
 - [[99 - Recursos/notebooks/Clase 01 - Practica 01 - Comparacion DBSCAN HDBSCAN sintetica.ipynb|P01: comparación sintética DBSCAN/HDBSCAN]]: `make_moons`, sin contraste Bogotá ni mapas geográficos; mantiene gráficos tabulares ArcGIS y conceptuales.
 - [[99 - Recursos/notebooks/Clase 01 - Practica 02 - Clustering Bomberos con ArcGIS Pro.ipynb|P02: clustering de bomberos]]: EDA, DBSCAN, centros/Identity/COUNT/unión, HDBSCAN y OPTICS ejecutados; copia jurisdiccional preparada externamente y comprobada, de solo lectura en el notebook. No certifica límites legales ni cobertura operativa.
+
+### Clase 03 · Del mapa acumulado a los patrones temporales
+
+[[01 - Clases/2026-09-16 - Clase 03 - Cubos espacio-temporales y patrones emergentes|Clase 03]] conecta siniestros fechados con concentración y evolución del patrón; conserva los contrastes de colegios y abejas.
+
+- [[02 - Conceptos/Cubo espacio-temporal]]: cómo combinar ubicación e intervalo.
+- [[02 - Conceptos/Emerging Hot Spot Analysis]]: distinguir persistencia e intensificación del agrupamiento.
+- [[03 - Herramientas/ArcGIS Pro - Space Time Pattern Mining]]: llevar esas preguntas a ArcGIS Pro.
+- [P01: cubo y contrastes](99%20-%20Recursos/notebooks/Clase%2003%20-%20Practica%2001%20-%20Cubos%20espacio-temporales%20y%20patrones%20emergentes.ipynb): 21 celdas de código completadas y 16 PNG guardados, con fallo al cerrar el kernel; no ejecución integral limpia. Consulta las [[99 - Recursos/datos/clase_03/README|entradas seleccionadas y su procedencia]].
+
+El video sigue parcialmente revisado y la revisión integrada está pendiente. Este borrador no equivale a clase procesada ni aprobación académica.
 
 ## Próximo paso
 

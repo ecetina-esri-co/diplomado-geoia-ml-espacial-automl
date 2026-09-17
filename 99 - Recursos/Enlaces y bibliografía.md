@@ -70,6 +70,14 @@ V13 conserva identidad y tiempos mediante localizador interno, no URL privada. S
 
 [[99 - Recursos/Clase 01 - Resultados de prácticas]] es autoridad de cifras observadas; no atribuir a artículos o video métricas de los notebooks locales.
 
+## Clase 03 — cubos espacio-temporales y patrones emergentes
+
+**Fuente:** Clase 15 — *Cubos espacio-temporales y patrones emergentes*, 2026-06-25; docente fuente **José Sebastián Gómez Romero**, Diplomado GeoIA - Esri. Grabación identificada mediante localizador interno `20260625_225553UTC`, duración **1:53:36**, sin URL privada. Su consulta requiere acceso autorizado y no concede derechos de redistribución.
+
+**Destino:** [[01 - Clases/2026-09-16 - Clase 03 - Cubos espacio-temporales y patrones emergentes|Clase 03]], 2026-09-16. **Docente:** Fabian Cetina. Borrador migrado, no clase procesada completa. La [[01 - Clases/2026-09-16 - Clase 03 - Cubos espacio-temporales y patrones emergentes#Procedencia, práctica y pendientes|procedencia de la nota]] registra acceso real al reproductor y revisión **parcial**: EDA 40:30–40:39, creación 45:00–45:10 y 46:50–47:00, escena COUNT 52:20–52:30, entre otros segmentos. No equivalen a cobertura docente completa.
+
+Para construir e interpretar el cubo, consulta las [[01 - Clases/2026-09-16 - Clase 03 - Cubos espacio-temporales y patrones emergentes#Referencias|referencias junto a la clase]]: E1, E2, E4 y E5 reutilizan documentación Esri **ArcGIS Pro 3.6** sobre agregación, Emerging, Gi* y OHA, con secciones y consultas registradas el 2026-09-17. E3 conserva una referencia `latest`, sin atribuirle verificación de versión 3.6. Las seis diapositivas son exportaciones de la presentación de referencia, no fotogramas del video. Los resultados históricos y los actuales con fallo de cierre del kernel se distinguen en la nota y el notebook.
+
 ## Conexiones
 
 - [[00 - Índice|Índice]]: entrada al bloque.

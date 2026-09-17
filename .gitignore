@@ -38,6 +38,8 @@ Thumbs.db
 *.bak
 
 # Notebooks y ArcGIS: archivos transitorios
+__pycache__/
+*.py[cod]
 **/.ipynb_checkpoints/
 *.lock
 **/ImportLog/

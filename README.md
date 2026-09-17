@@ -13,7 +13,7 @@ Bienvenido al vault de estudio del **Diplomado en Inteligencia Artificial Geoesp
 
 El vault es un **mapa de conocimiento**: las notas de clase se conectan con conceptos, herramientas, prácticas y preguntas. No necesitas leer archivos sueltos en orden alfabético: comienza por el índice y sigue las relaciones que ayuden a entender cada problema.
 
-> **Material disponible:** Clase 01 (14 de septiembre) y Clase 02 (15 de septiembre de 2026), con cinco notebooks. Disponibilidad no significa aprobación académica ni ejecución completa de todas las prácticas. Consulta el estado de cada nota y la tabla de prácticas de esta guía.
+> **Material disponible:** Clase 01 (14 de septiembre) y Clase 02 (15 de septiembre de 2026), y Clase 03 (16 de septiembre) como borrador migrado, con seis notebooks en total. Disponibilidad no significa aprobación académica ni ejecución completa de todas las prácticas. Consulta el estado de cada nota y la tabla de prácticas de esta guía.
 
 ## Ruta rápida
 
@@ -65,7 +65,9 @@ Git permite actualizar la misma copia; con ZIP, las actualizaciones se descargan
 - [Clase 01 — Clustering espacial](01%20-%20Clases/2026-09-14%20-%20Clase%2001%20-%20Clustering%20espacial.md).
 - [Clase 02 — OPTICS y autocorrelación espacial incremental](01%20-%20Clases/2026-09-15%20-%20Clase%2002%20-%20OPTICS%20y%20autocorrelaci%C3%B3n%20espacial%20incremental.md).
 
-Los cinco notebooks están enlazados en **Cómo ejecutar las prácticas**. El calendario no implica que ya existan notas para las nueve sesiones.
+- [Clase 03 — Cubos espacio-temporales y patrones emergentes](01%20-%20Clases/2026-09-16%20-%20Clase%2003%20-%20Cubos%20espacio-temporales%20y%20patrones%20emergentes.md): borrador migrado; video parcialmente revisado, no clase procesada completa.
+
+Los seis notebooks están enlazados en **Cómo ejecutar las prácticas**. El calendario no implica que ya existan notas para las nueve sesiones.
 
 ## Cómo leer una clase
 
@@ -120,6 +122,7 @@ El entorno observado es **ArcGIS Pro 3.6.2, ArcInfo (Advanced)**. La licencia im
 | Clase 02 · P01 | [OPTICS y abejas](99%20-%20Recursos/notebooks/Clase%2002%20-%20Practica%2001%20-%20OPTICS%20y%20abejas.ipynb) | Ejecución reciente completa. |
 | Clase 02 · P02 | [Colegios y escala espacial](99%20-%20Recursos/notebooks/Clase%2002%20-%20Practica%2002%20-%20Colegios%20y%20escala%20espacial.ipynb) | Última ejecución guardada detenida por licencia; nueva ejecución pendiente. |
 | Clase 02 · P03 | [Viviendas turísticas y Moran](99%20-%20Recursos/notebooks/Clase%2002%20-%20Practica%2003%20-%20Viviendas%20turisticas%20y%20Moran.ipynb) | Última ejecución guardada detenida por licencia; nueva ejecución pendiente. |
+| Clase 03 · P01 | [Cubos espacio-temporales y patrones emergentes](99%20-%20Recursos/notebooks/Clase%2003%20-%20Practica%2001%20-%20Cubos%20espacio-temporales%20y%20patrones%20emergentes.ipynb) | 21 celdas de código completadas y 16 visuales PNG guardados; el kernel falló al cerrar. No acredita ejecución integral limpia ni reproducibilidad sin errores. |
 
 > La incorporación de los datos locales de colegios no reejecutó ni modificó los notebooks. Los errores guardados de P02/P03 son anteriores a esa copia; sus resultados históricos no acreditan una ejecución nueva completa.
 
@@ -134,6 +137,7 @@ El entorno observado es **ArcGIS Pro 3.6.2, ArcInfo (Advanced)**. La licencia im
 | C02 P01 | `DATA_DIR`: `Datos`. |
 | C02 P02 | Cambia la ruta externa predeterminada por `99 - Recursos/datos/clase_02_colegios/colegios.gdb`, como se muestra abajo. |
 | C02 P03 | `DATA_DIR`: `99 - Recursos/datos/clase_02_viviendas_turisticas/viviendas.gdb`. |
+| C03 P01 | `DATA_DIR`: `99 - Recursos/datos/clase_03`; cuatro entidades en `entradas.gdb` y un cubo NetCDF. `OUTPUT_DIR`: `99 - Recursos/salidas_clase_03/practica_01`, con una subcarpeta nueva por ejecución. |
 
 En **C02 P02**, después de resolver `ROOT`, reemplaza únicamente la asignación de `DATA_DIR` en tu copia de estudiante:
 
@@ -221,7 +225,7 @@ Selecciona rutas explícitas; evita `git add .`, que puede incorporar archivos a
 
 ## Calendario definitivo
 
-Septiembre de **2026**. Cada sesión dura **2 horas**: nueve sesiones, **18 horas** en total. Actualmente están disponibles las notas de Clase 01 (14/09) y Clase 02 (15/09); las demás fechas son programación, no enlaces a material ya publicado.
+Septiembre de **2026**. Cada sesión dura **2 horas**: nueve sesiones, **18 horas** en total. Actualmente están disponibles las notas de Clase 01 (14/09) y Clase 02 (15/09); también está disponible localmente Clase 03 (16/09) como borrador migrado, con revisión parcial del video y fallo de cierre del kernel. Las demás fechas son programación, no enlaces a material ya publicado.
 
 | Módulo | Tema | Horas | Fechas definitivas — septiembre de 2026 |
 | --- | --- | ---: | --- |

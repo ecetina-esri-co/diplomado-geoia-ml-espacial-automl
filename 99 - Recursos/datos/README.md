@@ -8,7 +8,7 @@ Reutilizar insumos disponibles para la práctica autorizada e inspeccionar solo 
 
 ## Procedencia y selección proporcional
 
-- Fuente original, solo lectura: `C:\Users\ecetina\OneDrive - Esri NOSA\diplomado_geoia\99 - Recursos\datos`.
+- Fuente original, solo lectura: `C:\Users\[USER]\OneDrive - Esri NOSA\diplomado_geoia\99 - Recursos\datos`.
 - Ruta relativa desde este vault: `../diplomado_geoia/99 - Recursos/datos`.
 - Copia heredada local: `Datos/`, intacta; incluye las carpetas previamente identificadas `Datos/Datos Ejercicio5A.gdb/` y `Datos/Datos Ejercicio5C.gdb/`. Existencia de una GDB no prueba contenido ni validez de cada capa; reutilizar comprobaciones registradas de la práctica, no extrapolarlas.
 
@@ -60,6 +60,14 @@ PYTHONNOUSERSITE=1 "C:/Program Files/ArcGIS/Pro/bin/Python/envs/arcgispro-py3/py
 ```
 
 No se editaron ni ejecutaron notebooks, ni se procesaron incidentes. La actualización/ejecución del nuevo alcance P02 sigue pendiente.
+
+## Clase 03 · Entradas para cubos y contrastes
+
+La [[01 - Clases/2026-09-16 - Clase 03 - Cubos espacio-temporales y patrones emergentes|Clase 03, borrador migrado]] usa `99 - Recursos/datos/clase_03/`: `entradas.gdb` contiene `SiniestrosViales`, `UPZ`, `Colegios_Colombia_CollectEvents` e `Incidentes_Control_Abejas_CollectEvents`; la carpeta también contiene `cubo_espacio_temporal_accidentes.nc`.
+
+La [procedencia de estas entradas](clase_03/README.md) explica su selección desde el vault original y sus comprobaciones. Colegios y abejas son preparados históricos con pesos `ICOUNT`, no eventos individuales ni salidas de Clase 02 de este vault. No se repite su preparación.
+
+Configura esa carpeta como `DATA_DIR` en el notebook y conserva las entradas en solo lectura. Las copias y resultados van a `99 - Recursos/salidas_clase_03/practica_01/`, en una subcarpeta nueva por ejecución. **Emerging Hot Spot Analysis modifica el NetCDF que recibe:** usa solo la copia de salida, nunca el cubo de entrada, que ya contiene análisis históricos.
 
 ## Antes de compartir
 

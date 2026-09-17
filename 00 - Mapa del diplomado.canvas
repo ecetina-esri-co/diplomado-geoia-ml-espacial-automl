@@ -1,16 +1,24 @@
 {
 	"nodes":[
-		{"id":"title","type":"text","text":"# GeoIA · Módulos 5 y 6\n\nSolo Clase 01 desarrollada. Material para revisión académica; comprobación visual final pendiente. Otra clase y publicación requieren autorización separada.","x":0,"y":0,"width":360,"height":220,"color":"1"},
+		{"id":"title","type":"text","text":"# GeoIA · Módulos 5 y 6\n\nEntrada ligera al material local. Clase 03: borrador migrado, video parcial y cierre del kernel fallido; no procesada completa. Revisión integrada pendiente. Publicación requiere autorización separada.","x":0,"y":0,"width":360,"height":220,"color":"1"},
 		{"id":"index","type":"file","file":"00 - Índice.md","x":420,"y":0,"width":360,"height":220,"color":"4"},
 		{"id":"class01","type":"file","file":"01 - Clases/2026-09-14 - Clase 01 - Clustering espacial.md","x":420,"y":290,"width":440,"height":280,"color":"2"},
 		{"id":"concepts","type":"file","file":"02 - Conceptos/Comparación de métodos de clustering.md","x":0,"y":650,"width":360,"height":240,"color":"3"},
 		{"id":"results","type":"file","file":"99 - Recursos/Clase 01 - Resultados de prácticas.md","x":420,"y":650,"width":360,"height":240,"color":"5"},
-		{"id":"questions","type":"file","file":"05 - Preguntas/Preguntas abiertas.md","x":840,"y":650,"width":360,"height":240,"color":"6"}
+		{"id":"questions","type":"file","file":"05 - Preguntas/Preguntas abiertas.md","x":840,"y":650,"width":360,"height":240,"color":"6"},
+		{"id":"class03","type":"file","file":"01 - Clases/2026-09-16 - Clase 03 - Cubos espacio-temporales y patrones emergentes.md","x":1320,"y":290,"width":440,"height":280,"color":"2"},
+		{"id":"c03cube","type":"file","file":"02 - Conceptos/Cubo espacio-temporal.md","x":1320,"y":650,"width":360,"height":240,"color":"3"},
+		{"id":"c03emerging","type":"file","file":"02 - Conceptos/Emerging Hot Spot Analysis.md","x":1740,"y":650,"width":360,"height":240,"color":"3"},
+		{"id":"c03tool","type":"file","file":"03 - Herramientas/ArcGIS Pro - Space Time Pattern Mining.md","x":2160,"y":650,"width":360,"height":240,"color":"5"}
 	],
 	"edges":[
-		{"id":"entry","fromNode":"index","fromSide":"bottom","toNode":"class01","toSide":"top","label":"única clase activa"},
+		{"id":"entry","fromNode":"index","fromSide":"bottom","toNode":"class01","toSide":"top","label":"clase de inicio"},
 		{"id":"understand","fromNode":"class01","fromSide":"left","toNode":"concepts","toSide":"top","label":"explicar diferencias"},
 		{"id":"evidence","fromNode":"class01","fromSide":"bottom","toNode":"results","toSide":"top","label":"dos prácticas ejecutadas"},
-		{"id":"limits","fromNode":"class01","fromSide":"right","toNode":"questions","toSide":"top","label":"límites operativos"}
+		{"id":"limits","fromNode":"class01","fromSide":"right","toNode":"questions","toSide":"top","label":"límites operativos"},
+		{"id":"entry03","fromNode":"index","fromSide":"right","toNode":"class03","toSide":"top","label":"borrador migrado"},
+		{"id":"c03bins","fromNode":"class03","fromSide":"bottom","toNode":"c03cube","toSide":"top","label":"ubicación e intervalo"},
+		{"id":"c03patterns","fromNode":"class03","fromSide":"right","toNode":"c03emerging","toSide":"top","label":"historia del agrupamiento"},
+		{"id":"c03operations","fromNode":"c03emerging","fromSide":"right","toNode":"c03tool","toSide":"left","label":"analizar en ArcGIS Pro"}
 	]
 }
