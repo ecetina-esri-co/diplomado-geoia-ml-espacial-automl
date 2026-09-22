@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Índices de teledetección usados en Coiba</title>
+  <desc id="desc">Diagrama de bandas ópticas y fórmulas de NDVI, EVI, SAVI, RVI, DVI, MSI y MNDWI.</desc>
+  <rect width="1100" height="620" fill="#f8fafc"/>
+  <text x="550" y="48" text-anchor="middle" font-family="Segoe UI, Arial" font-size="30" font-weight="700" fill="#163b2f">Índices ópticos usados como variables explicativas</text>
+  <text x="550" y="80" text-anchor="middle" font-family="Segoe UI, Arial" font-size="15" fill="#475569">Cada índice combina bandas para resaltar vegetación, humedad, suelo o agua. No mide biomasa directamente.</text>
+
+  <g font-family="Segoe UI, Arial" font-size="15">
+    <rect x="70" y="130" width="130" height="70" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="135" y="158" text-anchor="middle" font-weight="700" fill="#1d4ed8">Blue</text>
+    <text x="135" y="182" text-anchor="middle" fill="#1d4ed8">B2 / B2</text>
+
+    <rect x="230" y="130" width="130" height="70" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="295" y="158" text-anchor="middle" font-weight="700" fill="#166534">Green</text>
+    <text x="295" y="182" text-anchor="middle" fill="#166534">B3 / B3</text>
+
+    <rect x="390" y="130" width="130" height="70" rx="14" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+    <text x="455" y="158" text-anchor="middle" font-weight="700" fill="#991b1b">Red</text>
+    <text x="455" y="182" text-anchor="middle" fill="#991b1b">B4 / B4</text>
+
+    <rect x="550" y="130" width="130" height="70" rx="14" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="615" y="158" text-anchor="middle" font-weight="700" fill="#5b21b6">NIR</text>
+    <text x="615" y="182" text-anchor="middle" fill="#5b21b6">B5 / B8</text>
+
+    <rect x="710" y="130" width="130" height="70" rx="14" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="775" y="158" text-anchor="middle" font-weight="700" fill="#92400e">SWIR1</text>
+    <text x="775" y="182" text-anchor="middle" fill="#92400e">B6 / B11</text>
+
+    <rect x="870" y="130" width="130" height="70" rx="14" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+    <text x="935" y="158" text-anchor="middle" font-weight="700" fill="#9a3412">SWIR2</text>
+    <text x="935" y="182" text-anchor="middle" fill="#9a3412">B7 / B12</text>
+  </g>
+
+  <g font-family="Segoe UI, Arial" font-size="15" fill="#111827">
+    <rect x="70" y="260" width="300" height="70" rx="14" fill="#ffffff" stroke="#94a3b8"/>
+    <text x="90" y="287" font-weight="700">NDVI</text><text x="160" y="287">= (NIR - Red) / (NIR + Red)</text>
+    <text x="90" y="313" fill="#475569">Verdor; se satura en vegetación densa.</text>
+
+    <rect x="400" y="260" width="300" height="70" rx="14" fill="#ffffff" stroke="#94a3b8"/>
+    <text x="415" y="278" font-weight="700">EVI</text><text x="415" y="296" font-size="12">= 2.5(NIR-Red)/(NIR+6Red-7.5Blue+1)</text>
+    <text x="420" y="313" fill="#475569">Más sensible en doseles densos; usa azul.</text>
+
+    <rect x="730" y="260" width="300" height="70" rx="14" fill="#ffffff" stroke="#94a3b8"/>
+    <text x="745" y="278" font-weight="700">SAVI</text><text x="745" y="296" font-size="13">= 1.5(NIR-Red)/(NIR+Red+0.5)</text>
+    <text x="750" y="313" fill="#475569">Reduce influencia de suelo visible.</text>
+
+    <rect x="70" y="365" width="300" height="70" rx="14" fill="#ffffff" stroke="#94a3b8"/>
+    <text x="90" y="392" font-weight="700">RVI</text><text x="155" y="392">= NIR / Red</text>
+    <text x="90" y="418" fill="#475569">Razón simple rojo–NIR.</text>
+
+    <rect x="400" y="365" width="300" height="70" rx="14" fill="#ffffff" stroke="#94a3b8"/>
+    <text x="420" y="392" font-weight="700">DVI</text><text x="485" y="392">= NIR - Red</text>
+    <text x="420" y="418" fill="#475569">Contraste absoluto; sensible a escala.</text>
+
+    <rect x="730" y="365" width="300" height="70" rx="14" fill="#ffffff" stroke="#94a3b8"/>
+    <text x="750" y="392" font-weight="700">MSI</text><text x="815" y="392">= SWIR / NIR</text>
+    <text x="750" y="418" font-size="12" fill="#475569">Sequedad relativa; requiere contexto y calibración.</text>
+
+    <rect x="235" y="470" width="630" height="70" rx="14" fill="#ecfeff" stroke="#0891b2"/>
+    <text x="255" y="498" font-weight="700">MNDWI</text><text x="345" y="498">= (Green - SWIR) / (Green + SWIR)</text>
+    <text x="255" y="524" fill="#155e75">Agua superficial y humedad/contexto; en Coiba puede actuar como proxy de humedad o borde costero.</text>
+  </g>
+
+  <text x="550" y="590" text-anchor="middle" font-family="Segoe UI, Arial" font-size="14" fill="#64748b">Landsat 8/9: B2-B7 · Sentinel-2: B2, B3, B4, B8, B11, B12. Usar reflectancia de superficie y documentar remuestreo.</text>
+</svg>

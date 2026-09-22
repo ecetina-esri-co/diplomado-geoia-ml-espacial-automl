@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+  <rect width="1100" height="620" fill="#fbfbf8"/>
+  <text x="550" y="52" text-anchor="middle" style="font-family: Segoe UI, Arial, sans-serif; font-size:30px; font-weight:700; fill:#223;">Importancia de variables ≠ causalidad</text>
+  <text x="550" y="84" text-anchor="middle" style="font-family: Segoe UI, Arial, sans-serif; font-size:16px; fill:#556;">El ranking muestra utilidad predictiva; la interpretación requiere contexto, residuales y teoría</text>
+
+  <g transform="translate(80,150)">
+    <rect x="0" y="0" width="300" height="330" rx="18" fill="#ffffff" stroke="#ccd"/>
+    <text x="150" y="40" text-anchor="middle" style="font-family: Segoe UI, Arial, sans-serif; font-size:20px; font-weight:700; fill:#223;">Ranking del modelo</text>
+    <text x="28" y="85" style="font-family: Segoe UI, Arial, sans-serif; font-size:14px; fill:#334;">Estrato 3</text><rect x="130" y="70" width="135" height="18" rx="4" fill="#59a14f"/>
+    <text x="28" y="125" style="font-family: Segoe UI, Arial, sans-serif; font-size:14px; fill:#334;">Género mujer</text><rect x="130" y="110" width="105" height="18" rx="4" fill="#76b7b2"/>
+    <text x="28" y="165" style="font-family: Segoe UI, Arial, sans-serif; font-size:14px; fill:#334;">Estrato 2</text><rect x="130" y="150" width="98" height="18" rx="4" fill="#f28e2b"/>
+    <text x="28" y="205" style="font-family: Segoe UI, Arial, sans-serif; font-size:14px; fill:#334;">Edad 30–39</text><rect x="130" y="190" width="85" height="18" rx="4" fill="#e15759"/>
+    <text x="28" y="245" style="font-family: Segoe UI, Arial, sans-serif; font-size:14px; fill:#334;">Internet sí/no</text><rect x="130" y="230" width="72" height="18" rx="4" fill="#4e79a7"/>
+    <text x="28" y="292" style="font-family: Segoe UI, Arial, sans-serif; font-size:13px; fill:#667;">Pregunta: ¿qué ayudó a predecir?</text>
+  </g>
+
+  <path d="M410 315 L520 315" stroke="#718096" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <g transform="translate(540,135)">
+    <rect x="0" y="0" width="500" height="360" rx="18" fill="#eef7ff" stroke="#2f6fb0" stroke-width="2"/>
+    <text x="250" y="42" text-anchor="middle" style="font-family: Segoe UI, Arial, sans-serif; font-size:21px; font-weight:700; fill:#1f4e79;">Lectura responsable</text>
+    <g transform="translate(45,80)">
+      <rect x="0" y="0" width="180" height="58" rx="12" fill="#fff" stroke="#b9cde5"/>
+      <text x="90" y="35" text-anchor="middle" style="font-family: Segoe UI, Arial, sans-serif; font-size:14px; font-weight:700; fill:#223;">Revisar teoría</text>
+      <rect x="250" y="0" width="180" height="58" rx="12" fill="#fff" stroke="#b9cde5"/>
+      <text x="340" y="35" text-anchor="middle" style="font-family: Segoe UI, Arial, sans-serif; font-size:14px; font-weight:700; fill:#223;">Mapear residuales</text>
+      <rect x="0" y="105" width="180" height="58" rx="12" fill="#fff" stroke="#b9cde5"/>
+      <text x="90" y="130" text-anchor="middle" style="font-family: Segoe UI, Arial, sans-serif; font-size:14px; font-weight:700; fill:#223;">Detectar proxies</text>
+      <text x="90" y="149" text-anchor="middle" style="font-family: Segoe UI, Arial, sans-serif; font-size:12px; fill:#556;">tamaño, cobertura, sesgo</text>
+      <rect x="250" y="105" width="180" height="58" rx="12" fill="#fff" stroke="#b9cde5"/>
+      <text x="340" y="130" text-anchor="middle" style="font-family: Segoe UI, Arial, sans-serif; font-size:14px; font-weight:700; fill:#223;">Validar decisión</text>
+      <text x="340" y="149" text-anchor="middle" style="font-family: Segoe UI, Arial, sans-serif; font-size:12px; fill:#556;">costo del error</text>
+      <rect x="125" y="220" width="230" height="62" rx="14" fill="#e8f5e9" stroke="#2e7d32"/>
+      <text x="240" y="248" text-anchor="middle" style="font-family: Segoe UI, Arial, sans-serif; font-size:15px; font-weight:700; fill:#1b5e20;">Hipótesis defendible</text>
+      <text x="240" y="270" text-anchor="middle" style="font-family: Segoe UI, Arial, sans-serif; font-size:13px; fill:#1b5e20;">no afirmación causal automática</text>
+    </g>
+  </g>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#718096"/></marker></defs>
+</svg>

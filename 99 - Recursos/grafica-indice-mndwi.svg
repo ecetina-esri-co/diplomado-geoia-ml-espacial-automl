@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">MNDWI</title>
+  <desc id="desc">Definición, fórmula y cautelas de MNDWI para teledetección.</desc>
+  <rect width="960" height="540" fill="#f8fafc"/>
+  <rect x="60" y="55" width="840" height="430" rx="28" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+  <text x="480" y="115" text-anchor="middle" font-family="Segoe UI, Arial" font-size="42" font-weight="700" fill="#12372a">MNDWI</text>
+  <rect x="120" y="150" width="720" height="72" rx="18" fill="#e0f2fe" stroke="#0284c7"/>
+  <text x="480" y="195" text-anchor="middle" font-family="Consolas, monospace" font-size="25" fill="#075985">(Green - SWIR) / (Green + SWIR)</text>
+  <g font-family="Segoe UI, Arial" font-size="19" fill="#1f2937">
+    <text x="150" y="280" font-weight="700">Qué resalta:</text>
+    <text x="310" y="280">Agua superficial y humedad/bordes</text>
+    <text x="150" y="335" font-weight="700">Bandas:</text>
+    <text x="310" y="335">Landsat 8/9: (B3 - B6)/(B3 + B6)</text>
+    <text x="150" y="390" font-weight="700">Cautela:</text>
+    <text x="310" y="390">Sombras/turbidez pueden confundir</text>
+  </g>
+  <rect x="120" y="425" width="720" height="38" rx="12" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="480" y="450" text-anchor="middle" font-family="Segoe UI, Arial" font-size="16" fill="#166534">Usar reflectancia de superficie, máscara de nubes/sombras y validación local.</text>
+</svg>

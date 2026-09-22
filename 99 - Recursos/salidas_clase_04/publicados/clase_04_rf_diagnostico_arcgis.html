@@ -1,0 +1,86 @@
+
+    <style>
+      .arcgis-report{font-family:Segoe UI,Arial,sans-serif;line-height:1.35;color:#223;}
+      .arcgis-report h3{margin:1em 0 .35em;color:#1f4e79;border-bottom:1px solid #bdd7ee;padding-bottom:.2em;}
+      .arcgis-report pre{background:#fbfbf8;border:1px solid #ddd;border-radius:8px;padding:10px;white-space:pre-wrap;font-size:12px;}
+      .arcgis-report .note{background:#fff3e0;border-left:4px solid #f28e2b;padding:8px 10px;margin:10px 0;}
+    </style>
+    
+<div class="arcgis-report">
+<h2>Salida de ArcPy: Forest-based Regression</h2>
+<div class="note"><strong>Lectura:</strong> esta salida corresponde a la herramienta de ArcGIS Pro. Debe interpretarse junto con residuales, mapa de errores e importancia de variables; no es una validación espacial final.</div>
+<h3>Diagnóstico De Arcpy</h3>
+<pre>Random Seed: 551717</pre>
+<h3>Model Characteristics</h3>
+<pre>Number of Trees                                   30
+Leaf Size                                          5
+Tree Depth Range                               20-20
+Mean Tree Depth                                   20
+% of Training Available per Tree                 100
+Number of Randomly Sampled Variables               5
+% of Training Data Excluded for Validation        10</pre>
+<h3>Model Out Of Bag Errors</h3>
+<pre>Number of Trees                       15              30
+MSE                            25650.854       23057.322
+% of variation explained          -8.939           2.076</pre>
+<h3>Top Variable Importance</h3>
+<pre>Variable               Importance               %
+DEM                   14021328.90              15
+B4                     8586904.40               9
+B7                     7354004.97               8
+Slope                  6558653.77               7
+B1                     6308452.68               7
+MNDWI                  6116516.13               6
+Aspect                 6043891.14               6
+EVI                    6019259.28               6
+B3                     5399855.37               6
+B6                     5380276.56               6
+B2                     5293703.92               6
+MSI                    4350635.47               5
+DVI                    3002508.33               3
+B5                     2858736.07               3
+RVI                    2854865.81               3
+SAVI                   2736753.64               3
+NDVI                   2686588.49               3</pre>
+<h3>Training Data: Regression Diagnostics</h3>
+<pre>R-Squared                                                             0.890
+Mean Absolute Error (MAE)                                            46.075
+Mean Absolute Percentage Error (MAPE)                               160.496
+Root Mean Square Error (RMSE)                                        62.680
+p-value                                                               0.000
+Standard Error                                                        0.004
+*Predictions for the data used to train the model compared to the observed categories for those features</pre>
+<h3>Validation Data: Regression Diagnostics</h3>
+<pre>R-Squared                                                             0.196
+Mean Absolute Error (MAE)                                           109.068
+Mean Absolute Percentage Error (MAPE)                                24.554
+Root Mean Square Error (RMSE)                                       140.597
+p-value                                                               0.000
+Standard Error                                                        0.022
+*Predictions for the test data (excluded from model training) compared to the observed values for those test features
+Median R2 0.196 was approximately reached at seed 548499</pre>
+<h3>Explanatory Variable Range Diagnostics</h3>
+<pre>Variable   Training                Validation                     Share
+Minimum     Maximum     Minimum      Maximum     Training(a)   Validation(b)
+B1         7117.75     8522.71     7216.55      8263.82            1.00           0.75*
+B2         7386.09     8721.88     7439.18      8310.34            1.00           0.65*
+B3         7985.91     10236.29    8092.61      9277.56            1.00           0.53*
+B4         7550.56     10209.35    7679.94      8706.27            1.00           0.39*
+B5         11273.69    25703.36    12706.20     23950.35           1.00           0.78*
+B6         9018.02     16751.85    9292.91      13909.68           1.00           0.60*
+B7         7999.44     12488.11    8163.17      10018.97           1.00           0.41*
+NDVI       0.12        0.52        0.20         0.50               1.00           0.75*
+EVI        -5.02       7.55        0.43         6.66               1.00           0.50*
+SAVI       0.18        0.78        0.30         0.75               1.00           0.75*
+MNDWI      -2.49e-01   -3.02e-02   -2.14e-01    -3.68e-02          1.00           0.81*
+MSI        0.53        0.99        0.52         0.76              0.99*           0.50*
+RVI        1.31        3.14        1.55         2.98               1.00           0.78*
+DVI        2796.50     17527.99    4537.00      15908.23           1.00           0.77*
+DEM        5.01        341.01      5.26         330.35             1.00           0.97*
+Slope      0.37        50.81       0.80         35.44              1.00           0.69*
+Aspect     1.48        354.22      2.75         350.46             1.00           0.99*
+(a) % of overlap between the ranges of the training data and the input explanatory variable
+(b) % of overlap between the ranges of the validation data and the training data
+*  Data ranges do not coincide. Training or validation is occurring with incomplete data.
++  Ranges of the training data and prediction data do not coincide and the tool is attempting to extrapolate.</pre>
+</div>

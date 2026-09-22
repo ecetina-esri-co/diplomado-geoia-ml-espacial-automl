@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="650" viewBox="0 0 1160 650">
+  <rect width="1160" height="650" fill="#fbfbf8"/>
+  <text x="580" y="52" text-anchor="middle" style="font-family: Segoe UI, Arial, sans-serif; font-size:30px; font-weight:700; fill:#223;">Aprendizaje supervisado geoespacial</text>
+  <text x="580" y="84" text-anchor="middle" style="font-family: Segoe UI, Arial, sans-serif; font-size:16px; fill:#556;">Aprender con ejemplos conocidos para predecir en entidades, ubicaciones o píxeles nuevos</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#718096"/></marker>
+    <style>
+      .box{fill:#fff;stroke:#ccd;stroke-width:1.4px}.title{font-family:Segoe UI,Arial,sans-serif;font-size:18px;font-weight:700;fill:#223}.txt{font-family:Segoe UI,Arial,sans-serif;font-size:14px;fill:#445}.small{font-family:Segoe UI,Arial,sans-serif;font-size:12px;fill:#667}.pill{fill:#eef7ff;stroke:#2f6fb0;stroke-width:1.4px}
+    </style>
+  </defs>
+
+  <g transform="translate(60,140)">
+    <rect class="box" x="0" y="0" width="230" height="335" rx="18"/>
+    <text class="title" x="115" y="38" text-anchor="middle">Datos etiquetados</text>
+    <circle cx="55" cy="88" r="16" fill="#36b7b4"/><text class="small" x="84" y="93">punto con biomasa = 82</text>
+    <circle cx="55" cy="132" r="16" fill="#7cc36d"/><text class="small" x="84" y="137">parcela clase bosque</text>
+    <circle cx="55" cy="176" r="16" fill="#f28e2b"/><text class="small" x="84" y="181">zona riesgo alto</text>
+    <path d="M40 242 h150 M40 270 h130 M40 298 h170" stroke="#cfd8dc" stroke-width="10" stroke-linecap="round"/>
+    <text class="small" x="115" y="323" text-anchor="middle">respuesta conocida</text>
+  </g>
+
+  <path d="M302 302 L405 302" stroke="#718096" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <g transform="translate(410,125)">
+    <rect class="box" x="0" y="0" width="340" height="365" rx="18"/>
+    <text class="title" x="170" y="38" text-anchor="middle">Variables explicativas</text>
+    <g transform="translate(35,76)">
+      <rect class="pill" x="0" y="0" width="270" height="58" rx="12"/>
+      <text class="txt" x="135" y="25" text-anchor="middle" font-weight="700">Atributos</text>
+      <text class="small" x="135" y="45" text-anchor="middle">campos de la entidad</text>
+      <rect class="pill" x="0" y="85" width="270" height="58" rx="12"/>
+      <text class="txt" x="135" y="110" text-anchor="middle" font-weight="700">Distancias / contexto</text>
+      <text class="small" x="135" y="130" text-anchor="middle">proximidad, área de influencia</text>
+      <rect class="pill" x="0" y="170" width="270" height="58" rx="12"/>
+      <text class="txt" x="135" y="195" text-anchor="middle" font-weight="700">Rasters e índices</text>
+      <text class="small" x="135" y="215" text-anchor="middle">bandas, NDVI, elevación</text>
+    </g>
+    <text class="small" x="170" y="328" text-anchor="middle">El modelo aprende relaciones, no causas garantizadas.</text>
+  </g>
+
+  <path d="M760 302 L855 302" stroke="#718096" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <g transform="translate(865,140)">
+    <rect x="0" y="0" width="235" height="335" rx="18" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.6"/>
+    <text class="title" x="118" y="38" text-anchor="middle" fill="#1b5e20">Predicción</text>
+    <rect x="45" y="75" width="145" height="88" rx="10" fill="#fff" stroke="#a5d6a7"/>
+    <text class="txt" x="118" y="108" text-anchor="middle">Nueva entidad</text>
+    <text class="small" x="118" y="132" text-anchor="middle">valor o clase estimada</text>
+    <rect x="45" y="198" width="145" height="88" rx="10" fill="#fff" stroke="#a5d6a7"/>
+    <text class="txt" x="118" y="231" text-anchor="middle">Raster continuo</text>
+    <text class="small" x="118" y="255" text-anchor="middle">superficie de predicción</text>
+  </g>
+
+  <g transform="translate(260,545)">
+    <rect x="0" y="0" width="640" height="54" rx="14" fill="#fff3e0" stroke="#f28e2b"/>
+    <text class="txt" x="320" y="23" text-anchor="middle" font-weight="700">Validación: reservar datos no vistos por el modelo</text>
+    <text class="small" x="320" y="42" text-anchor="middle">La pregunta clave es si generaliza, no si memoriza la muestra.</text>
+  </g>
+</svg>

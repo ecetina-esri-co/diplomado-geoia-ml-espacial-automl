@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="660" viewBox="0 0 1180 660">
+  <rect width="1180" height="660" fill="#fbfbf8"/>
+  <text x="590" y="52" text-anchor="middle" style="font-family: Segoe UI, Arial, sans-serif; font-size:30px; font-weight:700; fill:#223;">Random Forest para biomasa con rasters</text>
+  <text x="590" y="84" text-anchor="middle" style="font-family: Segoe UI, Arial, sans-serif; font-size:16px; fill:#556;">Puntos medidos + bandas/índices raster → modelo → superficie de predicción</text>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#718096"/></marker>
+    <style>.t{font-family:Segoe UI,Arial,sans-serif;font-size:18px;font-weight:700;fill:#223}.n{font-family:Segoe UI,Arial,sans-serif;font-size:14px;fill:#334}.s{font-family:Segoe UI,Arial,sans-serif;font-size:12px;fill:#667}</style>
+  </defs>
+
+  <g transform="translate(55,142)">
+    <rect x="0" y="0" width="240" height="330" rx="18" fill="#fff" stroke="#ccd"/>
+    <text class="t" x="120" y="38" text-anchor="middle">Muestras de campo</text>
+    <rect x="35" y="66" width="170" height="190" rx="14" fill="#e8f5e9" stroke="#a5d6a7"/>
+    <circle cx="70" cy="105" r="8" fill="#2e7d32"/><circle cx="145" cy="120" r="8" fill="#2e7d32"/><circle cx="112" cy="175" r="8" fill="#2e7d32"/><circle cx="180" cy="210" r="8" fill="#2e7d32"/><circle cx="82" cy="230" r="8" fill="#2e7d32"/>
+    <path d="M35 190 C80 150,130 250,205 150" fill="none" stroke="#81c784" stroke-width="12" opacity=".45"/>
+    <text class="n" x="120" y="290" text-anchor="middle">biomasa conocida</text>
+    <text class="s" x="120" y="312" text-anchor="middle">variable objetivo</text>
+  </g>
+
+  <path d="M305 305 L390 305" stroke="#718096" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <g transform="translate(400,125)">
+    <rect x="0" y="0" width="260" height="365" rx="18" fill="#eef7ff" stroke="#2f6fb0"/>
+    <text class="t" x="130" y="38" text-anchor="middle">Rasters explicativos</text>
+    <g transform="translate(54,72)">
+      <rect x="0" y="0" width="150" height="54" rx="10" fill="#fff" stroke="#b9cde5"/><text class="n" x="75" y="33" text-anchor="middle">Landsat bandas</text>
+      <rect x="0" y="70" width="150" height="54" rx="10" fill="#fff" stroke="#b9cde5"/><text class="n" x="75" y="103" text-anchor="middle">NDVI / índices</text>
+      <rect x="0" y="140" width="150" height="54" rx="10" fill="#fff" stroke="#b9cde5"/><text class="n" x="75" y="173" text-anchor="middle">DEM / pendiente</text>
+      <rect x="0" y="210" width="150" height="54" rx="10" fill="#fff" stroke="#b9cde5"/><text class="n" x="75" y="243" text-anchor="middle">textura / aspecto</text>
+    </g>
+    <text class="s" x="130" y="335" text-anchor="middle">valores extraídos en cada punto</text>
+  </g>
+
+  <path d="M670 305 L755 305" stroke="#718096" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <g transform="translate(765,142)">
+    <rect x="0" y="0" width="160" height="330" rx="18" fill="#fff3e0" stroke="#f28e2b"/>
+    <text class="t" x="80" y="38" text-anchor="middle">Bosque</text>
+    <path d="M50 260 V115 M30 150 L50 115 L70 150 M35 185 L50 145 L75 185" stroke="#5d4037" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M105 260 V100 M82 140 L105 100 L128 140 M88 180 L105 130 L132 180" stroke="#5d4037" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <circle cx="50" cy="112" r="24" fill="#66bb6a" opacity=".85"/><circle cx="105" cy="98" r="24" fill="#43a047" opacity=".85"/>
+    <text class="s" x="80" y="302" text-anchor="middle">promedio de árboles</text>
+  </g>
+
+  <path d="M935 305 L1020 305" stroke="#718096" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <g transform="translate(1025,142)">
+    <rect x="0" y="0" width="110" height="330" rx="18" fill="#e8f5e9" stroke="#2e7d32"/>
+    <text class="t" x="55" y="38" text-anchor="middle">Salida</text>
+    <g transform="translate(17,78)">
+      <rect x="0" y="0" width="76" height="180" fill="#dcedc8" stroke="#a5d6a7"/>
+      <rect x="0" y="120" width="76" height="60" fill="#1b5e20" opacity=".75"/>
+      <rect x="0" y="70" width="76" height="50" fill="#388e3c" opacity=".65"/>
+      <rect x="0" y="35" width="76" height="35" fill="#81c784" opacity=".75"/>
+    </g>
+    <text class="s" x="55" y="300" text-anchor="middle">biomasa</text>
+    <text class="s" x="55" y="318" text-anchor="middle">estimada</text>
+  </g>
+
+  <g transform="translate(170,550)">
+    <rect x="0" y="0" width="840" height="58" rx="14" fill="#fff" stroke="#ccd"/>
+    <text class="n" x="420" y="24" text-anchor="middle" font-weight="700">Cuidado: extrapolar no es medir</text>
+    <text class="s" x="420" y="44" text-anchor="middle">La superficie es confiable solo dentro del dominio representado por las muestras y variables disponibles.</text>
+  </g>
+</svg>

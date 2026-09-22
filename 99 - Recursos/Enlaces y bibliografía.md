@@ -78,6 +78,18 @@ V13 conserva identidad y tiempos mediante localizador interno, no URL privada. S
 
 Para construir e interpretar el cubo, consulta las [[01 - Clases/2026-09-16 - Clase 03 - Cubos espacio-temporales y patrones emergentes#Referencias|referencias junto a la clase]]: E1, E2, E4 y E5 reutilizan documentación Esri **ArcGIS Pro 3.6** sobre agregación, Emerging, Gi* y OHA, con secciones y consultas registradas el 2026-09-17. E3 conserva una referencia `latest`, sin atribuirle verificación de versión 3.6. Las seis diapositivas son exportaciones de la presentación de referencia, no fotogramas del video. Los resultados históricos y los actuales con fallo de cierre del kernel se distinguen en la nota y el notebook.
 
+## Clase 04 · Aprendizaje supervisado y Random Forest
+
+[[2026-09-21 - Clase 04 - Aprendizaje supervisado y Random Forest geoespacial|Clase 04, 21/09/2026]] conecta estas referencias con la práctica Coiba. Material para revisión, sin aprobación académica; ejecución histórica 17/17 con raster y corrección residual focal posterior; video parcial y excluido de esta preparación. La disposición completa de Notebook/Obsidian sigue parcialmente comprobada. Las nuevas entradas bibliográficas siguientes corresponden a documentación web ArcGIS y estadística; se reutiliza la consulta del **2026-09-21**, sin nueva investigación.
+
+- **Esri — Forest-based and Boosted Classification and Regression.** ArcGIS Pro **3.6**, Usage, Parameters y Syntax; tipos de predicción, parámetros y porcentaje retenido para validación. https://pro.arcgis.com/en/pro-app/3.6/tool-reference/spatial-statistics/forestbasedclassificationregression.htm.
+- **Esri — How Forest-based and Boosted Classification and Regression works.** ArcGIS Pro **3.6**, funcionamiento, validación e importancia de variables. https://pro.arcgis.com/en/pro-app/3.6/tool-reference/spatial-statistics/how-forest-works.htm.
+- **Esri — Band Arithmetic function.** ArcGIS Pro **3.6**, fórmulas y bandas de NDVI, EVI, SAVI, MNDWI y SR. https://pro.arcgis.com/en/pro-app/3.6/help/analysis/raster-functions/band-arithmetic-function.htm.
+- **Esri — Extract Multi Values to Points.** ArcGIS Pro **3.6**, Usage y Parameters; referencia espacial por raster, interpolación bilineal y modificación de puntos de entrada. https://pro.arcgis.com/en/pro-app/3.6/tool-reference/spatial-analyst/extract-multi-values-to-points.htm.
+- **Leo Breiman y Adele Cutler — Random Forests.** University of California, Berkeley; introducción, combinación de árboles, OOB e importancia; recurso web sin versión declarada. https://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm.
+
+Los créditos de grabación y diapositivas, con sus localizadores exactos, están junto a los recursos en la nota; el usuario confirmó expresamente la redistribución de Coiba y las capturas fuente de Francisco Javier Anzola. No se redistribuyen los PPTX ni se acredita procedencia GEDI. Consulte también [[03 - Herramientas/ArcGIS Pro - Forest-based and Boosted Classification and Regression|la herramienta aplicada]] y la [procedencia de Coiba](datos/clase_04/README.md).
+
 ## Conexiones
 
 - [[00 - Índice|Índice]]: entrada al bloque.

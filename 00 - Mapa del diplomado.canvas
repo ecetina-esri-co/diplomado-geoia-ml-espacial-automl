@@ -1,5 +1,8 @@
 {
 	"nodes":[
+		{"id":"class06","type":"file","file":"01 - Clases/2026-09-21 - Clase 04 - Aprendizaje supervisado y Random Forest geoespacial.md","x":2640,"y":290,"width":440,"height":280,"color":"2"},
+		{"id":"c06forest","type":"file","file":"02 - Conceptos/Random Forest.md","x":2640,"y":650,"width":360,"height":240,"color":"3"},
+		{"id":"c06validation","type":"file","file":"02 - Conceptos/Validación de modelos supervisados.md","x":3060,"y":650,"width":360,"height":240,"color":"5"},
 		{"id":"title","type":"text","text":"# GeoIA · Módulos 5 y 6\n\nEntrada ligera al material local. Clase 03: borrador migrado, video parcial y cierre del kernel fallido; no procesada completa. Revisión integrada pendiente. Publicación requiere autorización separada.","x":0,"y":0,"width":360,"height":220,"color":"1"},
 		{"id":"index","type":"file","file":"00 - Índice.md","x":420,"y":0,"width":360,"height":220,"color":"4"},
 		{"id":"class01","type":"file","file":"01 - Clases/2026-09-14 - Clase 01 - Clustering espacial.md","x":420,"y":290,"width":440,"height":280,"color":"2"},
@@ -12,6 +15,9 @@
 		{"id":"c03tool","type":"file","file":"03 - Herramientas/ArcGIS Pro - Space Time Pattern Mining.md","x":2160,"y":650,"width":360,"height":240,"color":"5"}
 	],
 	"edges":[
+		{"id":"entry06","fromNode":"index","fromSide":"right","toNode":"class06","toSide":"top","label":"21/09 · 17/17 histórico + residual focal; video parcial, borrador"},
+		{"id":"c06model","fromNode":"class06","fromSide":"bottom","toNode":"c06forest","toSide":"top","label":"estimar biomasa"},
+		{"id":"c06evaluate","fromNode":"c06forest","fromSide":"right","toNode":"c06validation","toSide":"left","label":"evaluar generalización"},
 		{"id":"entry","fromNode":"index","fromSide":"bottom","toNode":"class01","toSide":"top","label":"clase de inicio"},
 		{"id":"understand","fromNode":"class01","fromSide":"left","toNode":"concepts","toSide":"top","label":"explicar diferencias"},
 		{"id":"evidence","fromNode":"class01","fromSide":"bottom","toNode":"results","toSide":"top","label":"dos prácticas ejecutadas"},

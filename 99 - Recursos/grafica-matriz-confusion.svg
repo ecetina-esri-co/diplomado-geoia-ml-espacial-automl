@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="650" viewBox="0 0 1040 650">
+  <rect width="1040" height="650" fill="#fbfbf8"/>
+  <text x="520" y="52" text-anchor="middle" style="font-family: Segoe UI, Arial, sans-serif; font-size:30px; font-weight:700; fill:#223;">Matriz de confusión</text>
+  <text x="520" y="84" text-anchor="middle" style="font-family: Segoe UI, Arial, sans-serif; font-size:16px; fill:#556;">Cruza lo real con lo predicho para entender qué tipo de error comete un clasificador</text>
+  <style>.h{font-family:Segoe UI,Arial,sans-serif;font-size:18px;font-weight:700;fill:#223}.n{font-family:Segoe UI,Arial,sans-serif;font-size:15px;fill:#334}.s{font-family:Segoe UI,Arial,sans-serif;font-size:13px;fill:#556}.m{font-family:Segoe UI,Arial,sans-serif;font-size:21px;font-weight:700;fill:#fff}</style>
+
+  <g transform="translate(190,140)">
+    <text class="h" x="360" y="0" text-anchor="middle">Predicción del modelo</text>
+    <text class="h" x="-72" y="235" text-anchor="middle" transform="rotate(-90 -72 235)">Realidad observada</text>
+
+    <rect x="150" y="35" width="210" height="52" rx="10" fill="#e3f2fd" stroke="#90caf9"/>
+    <rect x="370" y="35" width="210" height="52" rx="10" fill="#e3f2fd" stroke="#90caf9"/>
+    <text class="h" x="255" y="68" text-anchor="middle">Positivo</text>
+    <text class="h" x="475" y="68" text-anchor="middle">Negativo</text>
+
+    <rect x="0" y="95" width="140" height="150" rx="10" fill="#e8f5e9" stroke="#a5d6a7"/>
+    <rect x="0" y="255" width="140" height="150" rx="10" fill="#e8f5e9" stroke="#a5d6a7"/>
+    <text class="h" x="70" y="178" text-anchor="middle">Positivo</text>
+    <text class="h" x="70" y="338" text-anchor="middle">Negativo</text>
+
+    <rect x="150" y="95" width="210" height="150" rx="14" fill="#2e7d32"/>
+    <text class="m" x="255" y="155" text-anchor="middle">VP</text>
+    <text class="m" x="255" y="188" text-anchor="middle">Verdadero positivo</text>
+    <text class="s" x="255" y="216" text-anchor="middle" fill="#e8f5e9">detecta una zona crítica real</text>
+
+    <rect x="370" y="95" width="210" height="150" rx="14" fill="#d9534f"/>
+    <text class="m" x="475" y="155" text-anchor="middle">FN</text>
+    <text class="m" x="475" y="188" text-anchor="middle">Falso negativo</text>
+    <text class="s" x="475" y="216" text-anchor="middle" fill="#fff5f5">omite una zona crítica</text>
+
+    <rect x="150" y="255" width="210" height="150" rx="14" fill="#f0ad4e"/>
+    <text class="m" x="255" y="315" text-anchor="middle">FP</text>
+    <text class="m" x="255" y="348" text-anchor="middle">Falso positivo</text>
+    <text class="s" x="255" y="376" text-anchor="middle" fill="#fff8e1">alerta donde no era crítico</text>
+
+    <rect x="370" y="255" width="210" height="150" rx="14" fill="#2f6fb0"/>
+    <text class="m" x="475" y="315" text-anchor="middle">VN</text>
+    <text class="m" x="475" y="348" text-anchor="middle">Verdadero negativo</text>
+    <text class="s" x="475" y="376" text-anchor="middle" fill="#eef7ff">descarta correctamente</text>
+  </g>
+
+  <g transform="translate(90,570)">
+    <text class="n" x="0" y="0">Precision = VP / (VP + FP)</text>
+    <text class="n" x="330" y="0">Recall = VP / (VP + FN)</text>
+    <text class="n" x="640" y="0">Accuracy = (VP + VN) / Total</text>
+  </g>
+</svg>

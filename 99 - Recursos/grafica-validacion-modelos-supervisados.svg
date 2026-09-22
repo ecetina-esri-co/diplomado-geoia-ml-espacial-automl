@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620">
+  <rect width="1120" height="620" fill="#fbfbf8"/>
+  <text x="560" y="52" text-anchor="middle" style="font-family: Segoe UI, Arial, sans-serif; font-size:30px; font-weight:700; fill:#223;">Validación de modelos supervisados</text>
+  <text x="560" y="84" text-anchor="middle" style="font-family: Segoe UI, Arial, sans-serif; font-size:16px; fill:#556;">Separar entrenamiento y evaluación evita confundir aprendizaje con memorización</text>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#718096"/></marker>
+    <style>.t{font-family:Segoe UI,Arial,sans-serif;font-size:17px;font-weight:700;fill:#223}.s{font-family:Segoe UI,Arial,sans-serif;font-size:13px;fill:#556}.n{font-family:Segoe UI,Arial,sans-serif;font-size:15px;fill:#334}</style>
+  </defs>
+
+  <g transform="translate(70,140)">
+    <rect x="0" y="0" width="430" height="220" rx="18" fill="#fff" stroke="#ccd"/>
+    <text class="t" x="215" y="36" text-anchor="middle">Datos con respuesta conocida</text>
+    <g transform="translate(35,70)">
+      <rect x="0" y="0" width="285" height="72" rx="14" fill="#e0f7fa" stroke="#26a6a2"/>
+      <text class="n" x="142" y="31" text-anchor="middle" font-weight="700">Entrenamiento</text>
+      <text class="s" x="142" y="53" text-anchor="middle">el modelo aprende patrones</text>
+      <rect x="300" y="0" width="70" height="72" rx="14" fill="#eeeeee" stroke="#777"/>
+      <text class="n" x="335" y="31" text-anchor="middle" font-weight="700">Val.</text>
+      <text class="s" x="335" y="53" text-anchor="middle">no visto</text>
+    </g>
+    <text class="s" x="215" y="178" text-anchor="middle">Ejemplo inicial: 90% entrenamiento / 10% validación</text>
+    <text class="s" x="215" y="200" text-anchor="middle">La proporción debe justificarse por muestra, riesgo y estándar del proyecto.</text>
+  </g>
+
+  <path d="M510 250 L610 250" stroke="#718096" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <g transform="translate(620,120)">
+    <rect x="0" y="0" width="430" height="260" rx="18" fill="#eef7ff" stroke="#2f6fb0"/>
+    <text class="t" x="215" y="38" text-anchor="middle">Tres lecturas complementarias</text>
+    <rect x="45" y="75" width="340" height="46" rx="10" fill="#fff" stroke="#b9cde5"/>
+    <text class="n" x="215" y="104" text-anchor="middle">Métricas globales: MAE, RMSE, accuracy, F1</text>
+    <rect x="45" y="137" width="340" height="46" rx="10" fill="#fff" stroke="#b9cde5"/>
+    <text class="n" x="215" y="166" text-anchor="middle">Errores fuera de bolsa / validación cruzada</text>
+    <rect x="45" y="199" width="340" height="46" rx="10" fill="#fff" stroke="#b9cde5"/>
+    <text class="n" x="215" y="228" text-anchor="middle">Mapa de residuales y sesgo territorial</text>
+  </g>
+
+  <g transform="translate(125,445)">
+    <rect x="0" y="0" width="870" height="82" rx="16" fill="#fff3e0" stroke="#f28e2b"/>
+    <text class="t" x="435" y="30" text-anchor="middle">Regla práctica</text>
+    <text class="n" x="435" y="57" text-anchor="middle">Un modelo geoespacial no se valida solo con una tabla: también se mira dónde falla.</text>
+  </g>
+</svg>

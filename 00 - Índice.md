@@ -26,7 +26,7 @@ Cada sesión dura dos horas en septiembre de 2026. Clase 03 se incorpora como bo
 | 2026-09-16 | Clase 03 | Minería de patrones espacio-temporales | [[01 - Clases/2026-09-16 - Clase 03 - Cubos espacio-temporales y patrones emergentes|Borrador migrado]]; video parcialmente revisado y cierre del kernel fallido. No procesada completa. |
 | 2026-09-17 | Por fecha | Minería de patrones espacio-temporales | Pendiente |
 | 2026-09-21 | Por fecha | Minería de patrones espacio-temporales | Pendiente |
-| 2026-09-22 | Por fecha | Regresión y clasificación basada en bosques | Pendiente |
+| 2026-09-21 (ajuste de Clase 04, antes 22/09) | Clase 04 | Regresión y clasificación basada en bosques | [[01 - Clases/2026-09-21 - Clase 04 - Aprendizaje supervisado y Random Forest geoespacial|Nota y práctica para revisión]]; 17/17 celdas de código completadas históricamente, incluida la rama raster; video parcial y mapa residual corregido mediante comprobación focal posterior, sin reentrenar. Mapa abierto en Pro verificado; Notebook/Obsidian completos no verificados. Video parcial, excluido de esta preparación; borrador sin aprobación académica. |
 | 2026-09-23 | Por fecha | Regresión y clasificación basada en bosques | Pendiente |
 | 2026-09-24 | Por fecha | Regresión y clasificación basada en bosques | Pendiente |
 | 2026-09-28 | Por fecha | Automatización de modelos (AutoML) | Pendiente |
@@ -60,6 +60,16 @@ Prácticas ejecutadas:
 - [P01: cubo y contrastes](99%20-%20Recursos/notebooks/Clase%2003%20-%20Practica%2001%20-%20Cubos%20espacio-temporales%20y%20patrones%20emergentes.ipynb): 21 celdas de código completadas y 16 PNG guardados, con fallo al cerrar el kernel; no ejecución integral limpia. Consulta las [[99 - Recursos/datos/clase_03/README|entradas seleccionadas y su procedencia]].
 
 El video sigue parcialmente revisado y la revisión integrada está pendiente. Este borrador no equivale a clase procesada ni aprobación académica.
+
+### Clase 04 · Aprender con respuesta conocida
+
+[[2026-09-21 - Clase 04 - Aprendizaje supervisado y Random Forest geoespacial|Clase 04, 21 de septiembre]] conecta [[02 - Conceptos/Aprendizaje supervisado]], [[02 - Conceptos/Random Forest]] y [[02 - Conceptos/Validación de modelos supervisados]] con biomasa de Coiba. Fecha ajustada expresamente del 22 al 21; las demás sesiones no se reprograman.
+
+- [[03 - Herramientas/ArcGIS Pro - Forest-based and Boosted Classification and Regression]]: parámetros, salidas y límites del bosque.
+- [P01: Random Forest geoespacial](99%20-%20Recursos/notebooks/Clase%2004%20-%20Practica%2001%20-%20Random%20Forest%20geoespacial.ipynb): entradas y resultados separados; 17/17 celdas de código completadas históricamente, incluida la rama raster en kernel independiente. [Salidas del notebook autoral](99%20-%20Recursos/notebooks/Clase%2004%20-%20Practica%2001%20-%20Random%20Forest%20geoespacial.ipynb). Mapa AGBD y Scatter nativos inspeccionados; mapa residual corregido mediante comprobación focal posterior, sin reentrenar. Mapa abierto en Pro verificado; Notebook/Obsidian completos no verificados. Video parcial, excluido de esta preparación; borrador sin aprobación académica.
+- [[99 - Recursos/datos/clase_04/README.md|Datos Coiba]] y [Antecedentes y resultados seleccionados](99%20-%20Recursos/salidas_clase_04/publicados/README.md): no confundir antecedentes con resultados actuales.
+
+Siete notebooks locales disponibles entre las clases enlazadas. Material de Clase 04 para revisión humana, sin aprobación académica ni cobertura completa del video.
 
 ## Próximo paso
 

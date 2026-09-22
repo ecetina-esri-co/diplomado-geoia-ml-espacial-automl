@@ -58,3 +58,25 @@ schema.ini
 
 # No ignorar globalmente PNG/SVG docentes ni notebooks aprobados.
 # Revisar permisos antes de autorizar datos crudos o salidas para versionado.
+
+# Clase 04: copia pública saneada y resultados seleccionados autorizados
+!/99 - Recursos/datos/clase_04/
+/99 - Recursos/datos/clase_04/*
+!/99 - Recursos/datos/clase_04/README.md
+!/99 - Recursos/datos/clase_04/Datos_Coiba.gdb/
+!/99 - Recursos/salidas_clase_04/
+/99 - Recursos/salidas_clase_04/*
+!/99 - Recursos/salidas_clase_04/publicados/
+/99 - Recursos/salidas_clase_04/publicados/*
+!/99 - Recursos/salidas_clase_04/publicados/arcgis_raster_agbd.png
+!/99 - Recursos/salidas_clase_04/publicados/arcgis_raster_histograma.png
+!/99 - Recursos/salidas_clase_04/publicados/clase_04_metricas_entrenamiento.csv
+!/99 - Recursos/salidas_clase_04/publicados/clase_04_raster_diagnostico_arcgis.html
+!/99 - Recursos/salidas_clase_04/publicados/clase_04_rf_diagnostico_arcgis.html
+!/99 - Recursos/salidas_clase_04/publicados/arcgis_residuales.png
+!/99 - Recursos/salidas_clase_04/publicados/residuales_resultado.json
+!/99 - Recursos/salidas_clase_04/publicados/historico_arcgis_agbd.png
+!/99 - Recursos/salidas_clase_04/publicados/historico_arcgis_agbd_ndvi.png
+!/99 - Recursos/salidas_clase_04/publicados/README.md
+# Incluso dentro de las excepciones públicas, los locks siguen privados.
+*.lock

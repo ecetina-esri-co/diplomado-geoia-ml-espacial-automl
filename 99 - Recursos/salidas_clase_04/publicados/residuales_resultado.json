@@ -1,0 +1,69 @@
+{
+  "arcgis_version": "3.6.2",
+  "license": "ArcInfo",
+  "source_fc": "99 - Recursos/salidas_clase_04/practica_01/ejecucion_0199c4565df24da99d4dcc2588490c81/clase_04_coiba_rf.gdb/rf_agbd_trained_features",
+  "copied_fc": "99 - Recursos/salidas_clase_04/practica_01/cierre_residual_final/render_7914460ffa414abfb9fc0a06210217c1/ejecucion_96430bc97835417abfec479d67d1738a/clase_04_coiba_rf.gdb/residuales_copia",
+  "count": 4840,
+  "counts": {
+    "negative": 2859,
+    "zero": 0,
+    "positive": 1981
+  },
+  "residual_min": -340.8680992910565,
+  "residual_max": 560.9328875910817,
+  "semantics": "RESIDUAL = AGBD - PREDICTED, todos los registros",
+  "max_absolute_semantic_difference": 0.0,
+  "copy_values_xy_unchanged": true,
+  "crs": "WGS_1984_UTM_Zone_17N",
+  "frame_extent": [
+    400162.4248750004,
+    809384.4868427425,
+    430340.69152500026,
+    833721.7986572586
+  ],
+  "all_xy_inside_frame": true,
+  "units": "Mg/ha",
+  "unit_authority": "confirmación del usuario; sin conversión",
+  "layers": [
+    {
+      "name": "Subpredicción (> 0): n=1981",
+      "query": "RESIDUAL > 0",
+      "count": 1981,
+      "renderer": "SimpleRenderer",
+      "visible": true,
+      "min_scale": 0.0,
+      "max_scale": 0.0,
+      "color": {
+        "RGB": [
+          178,
+          24,
+          43,
+          100
+        ]
+      },
+      "size": 4.0
+    },
+    {
+      "name": "Sobrepredicción (< 0): n=2859",
+      "query": "RESIDUAL < 0",
+      "count": 2859,
+      "renderer": "SimpleRenderer",
+      "visible": true,
+      "min_scale": 0.0,
+      "max_scale": 0.0,
+      "color": {
+        "RGB": [
+          33,
+          102,
+          172,
+          100
+        ]
+      },
+      "size": 4.0
+    }
+  ],
+  "png": "arcgis_residuales.png",
+  "aprx": "99 - Recursos/salidas_clase_04/practica_01/cierre_residual_final/render_7914460ffa414abfb9fc0a06210217c1/ejecucion_96430bc97835417abfec479d67d1738a/coiba_resultados.aprx",
+  "scope": "3 celdas de arranque + diagnóstico focal; no ejecución integral ni Forest",
+  "path_provenance": "source_fc, copied_fc y aprx: localizadores históricos relativos a la raíz; no distribuidos ni dependencias. png: relativo a este JSON."
+}
